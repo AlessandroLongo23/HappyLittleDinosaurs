@@ -1,0 +1,62 @@
+[
+    {
+        "type": "disaster",
+        "categories": [],
+        "copies": 1,
+        "name": "Ambushed",
+        "effect": "If you would add this card to your Disaster Area, move it to the bottom of the Disaster deck instead, then look at the top 3 cards of the Disaster deck. Return them to the top of the Disaster deck in any order.",
+        "description": null,
+        "front_image_index": 188,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Emotional"],
+        "copies": 1,
+        "name": "Caught Cosplaying",
+        "effect": null,
+        "description": "You stop to grab a coffee on your way to the convention. No one understands your elaborate costume.",
+        "front_image_index": 189,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Natural", "Predator"],
+        "copies": 1,
+        "name": "Mini Meteor",
+        "effect": "This card acts as either a Predatory Disaster or a Natural Disaster card.",
+        "description": null,
+        "front_image_index": 190,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Emotional", "Natural"],
+        "copies": 1,
+        "name": "Mini Meteor",
+        "effect": "This card acts as either a Predatory Disaster or a Natural Disaster card.",
+        "description": null,
+        "front_image_index": 191,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Emotional", "Predator"],
+        "copies": 1,
+        "name": "Mini Meteor",
+        "effect": "This card acts as either a Predatory Disaster or a Natural Disaster card.",
+        "description": null,
+        "front_image_index": 192,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": [],
+        "copies": 1,
+        "name": "Smell the Flowers",
+        "effect": "If you would add this card to your Disaster Area, move it to the bottom of the Disaster deck instead, then search the discard pile for an Instant card and add it to your hand.",
+        "description": null,
+        "front_image_index": 193,
+        "back_image_index": 1
+    }
+]

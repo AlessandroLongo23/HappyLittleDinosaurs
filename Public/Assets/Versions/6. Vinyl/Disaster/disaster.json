@@ -1,0 +1,102 @@
+[
+    {
+        "type": "disaster",
+        "categories": [],
+        "copies": 1,
+        "name": "Armed and Dangerous",
+        "effect": "If you would add this card to your Disaster Area, move it to the bottom of the Disaster deck instead, then collect 2 points for each Predatory Disaster card in your Disaster Area.",
+        "description": null,
+        "front_image_index": 196,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": [],
+        "copies": 1,
+        "name": "Clear the Air",
+        "effect": "If you would add this card to your Disaster Area, move it to the bottom of the Disaster deck instead, then collect 2 poitns for each Natural Disaster card in your Disaster Area.",
+        "description": null,
+        "front_image_index": 197,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": [],
+        "copies": 1,
+        "name": "Cutting Edge",
+        "effect": "If you would add this card to your Disaster Area, move it to the bottom of the Disaster deck instead, then discard up to 4 cards.",
+        "description": null,
+        "front_image_index": 198,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": [],
+        "copies": 1,
+        "name": "Decoy Dollar",
+        "effect": "If you would add this card to your Disaster Area, move it to the bottom of the Disaster deck instead, then swap hands with any other player.",
+        "description": null,
+        "front_image_index": 199,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": [],
+        "copies": 1,
+        "name": "Emotional Support Log",
+        "effect": "If you would add this card to your Disaster Area, move it to the bottom of the Disaster deck instead, then collect 2 points for each Emotional Disaster card in your Disaster Area.",
+        "description": null,
+        "front_image_index": 200,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": [],
+        "copies": 1,
+        "name": "Feathered Fury",
+        "effect": "If you would add this card to your Disaster Area, move it to the bottom of the Disaster deck instead, then search the Discard pile for an Instant card and add it to your hand.",
+        "description": null,
+        "front_image_index": 201,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": [],
+        "copies": 1,
+        "name": "Flying high",
+        "effect": "If you would add this card to your Disaster Area, move it to the bottom of the Disaster deck instead, then choose a player and look at that player's hand. Choose a card and add it to your hand.",
+        "description": null,
+        "front_image_index": 202,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": [],
+        "copies": 1,
+        "name": "Self Defense",
+        "effect": "If you would add this card to your Disaster Area, move it to the bottom of the Disaster deck instead, then choose a player. Move that player's Dinosaur meeple backward 5 spaces on their Escape Route.",
+        "description": null,
+        "front_image_index": 203,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": [],
+        "copies": 1,
+        "name": "Sweet Surprise",
+        "effect": "If you would add this card to your Disaster Area, move it to the bottom of the Disaster deck instead, then collect 5 points if you have at least 1 Meteor card in your Disaster Area.",
+        "description": null,
+        "front_image_index": 204,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": [],
+        "copies": 1,
+        "name": "Violent Outburst",
+        "effect": "If you would add this card to your Disaster Area, move it to the bottom of the Disaster deck instead, then move a Disaster card from your Disaster Area to the bottom of the Disaster deck.",
+        "description": null,
+        "front_image_index": 205,
+        "back_image_index": 1
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "type": "modifier",
+        "name": "Baby Pictures",
+        "copies": 3,
+        "effect": "Play this card during scoring. Choose a player. Move that player's Dinosaur meeple backwards 3 spaces on their Escape Route.",
+        "front_image_index": 172,
+        "back_image_index": 0
+    },
+    {
+        "type": "modifier",
+        "name": "Crippling Shyness",
+        "copies": 2,
+        "effect": "Play this card during scoring. The highest-scoring player at the end of the round may only collect up to 5 points.",
+        "front_image_index": 173,
+        "back_image_index": 0
+    },
+    {
+        "type": "modifier",
+        "name": "Double Date",
+        "copies": 3,
+        "effect": "Play this card during scoring. The advantages and disadvantages of all Dinosaur Traits are doubled.",
+        "front_image_index": 174,
+        "back_image_index": 0
+    },
+    {
+        "type": "modifier",
+        "name": "One Week Anniversary",
+        "copies": 2,
+        "effect": "Play this card during scoring. Swap the face-up Disaster card with a Disaster card in your Disaster Area.",
+        "front_image_index": 175,
+        "back_image_index": 0
+    }
+]

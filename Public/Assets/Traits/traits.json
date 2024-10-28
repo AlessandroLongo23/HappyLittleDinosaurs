@@ -1,0 +1,22 @@
+[
+    {
+        "name": "emotional",
+        "path": "Assets/Traits/emotional.png"
+    },
+    {
+        "name": "natural",
+        "path": "Assets/Traits/natural.png"
+    },
+    {
+        "name": "predator",
+        "path": "Assets/Traits/predator.png"
+    },
+    {
+        "name": "meteor",
+        "path": "Assets/Traits/predator.png"
+    },
+    {
+        "name": "hazard",
+        "path": "Assets/Traits/hazard.png"
+    }
+]

@@ -1,0 +1,207 @@
+[
+    {
+        "id": 0,
+        "path": "Assets/Versions/0. Base Game/Disaster/Blue - Emotional/Baddest Hair Day.png"
+    },
+    {
+        "id": 1,
+        "path": "Assets/Versions/0. Base Game/Disaster/Blue - Emotional/Emergency Ex-it.png"
+    },
+    {
+        "id": 2,
+        "path": "Assets/Versions/0. Base Game/Disaster/Blue - Emotional/Ghosted.png"
+    },
+    {
+        "id": 3,
+        "path": "Assets/Versions/0. Base Game/Disaster/Blue - Emotional/Left Behind... Again.png"
+    },
+    {
+        "id": 4,
+        "path": "Assets/Versions/0. Base Game/Disaster/Blue - Emotional/Ohh, Burn.png"
+    },
+    {
+        "id": 5,
+        "path": "Assets/Versions/0. Base Game/Disaster/Blue - Emotional/Outer Circle.png"
+    },
+    {
+        "id": 6,
+        "path": "Assets/Versions/0. Base Game/Disaster/Blue - Emotional/The Future is Bleak.png"
+    },
+    {
+        "id": 7,
+        "path": "Assets/Versions/0. Base Game/Disaster/Blue - Emotional/The Sad Truth.png"
+    },
+
+    {
+        "id": 8,
+        "path": "Assets/Versions/0. Base Game/Disaster/Green - Natural/Bright Idea.png"
+    },
+    {
+        "id": 9,
+        "path": "Assets/Versions/0. Base Game/Disaster/Green - Natural/Casual Afternoon Stroll.png"
+    },
+    {
+        "id": 10,
+        "path": "Assets/Versions/0. Base Game/Disaster/Green - Natural/Downpour.png"
+    },
+    {
+        "id": 11,
+        "path": "Assets/Versions/0. Base Game/Disaster/Green - Natural/Leaf Me Alone.png"
+    },
+    {
+        "id": 12,
+        "path": "Assets/Versions/0. Base Game/Disaster/Green - Natural/SPA Day.png"
+    },
+    {
+        "id": 13,
+        "path": "Assets/Versions/0. Base Game/Disaster/Green - Natural/This Feels Personal.png"
+    },
+    {
+        "id": 14,
+        "path": "Assets/Versions/0. Base Game/Disaster/Green - Natural/Trapped.png"
+    },
+    {
+        "id": 15,
+        "path": "Assets/Versions/0. Base Game/Disaster/Green - Natural/Uncommon Cold.png"
+    },
+
+    {
+        "id": 16,
+        "path": "Assets/Versions/0. Base Game/Disaster/Red - Predator/A Day at the Beach.png"
+    },
+    {
+        "id": 17,
+        "path": "Assets/Versions/0. Base Game/Disaster/Red - Predator/Armed and Dangerous.png"
+    },
+    {
+        "id": 18,
+        "path": "Assets/Versions/0. Base Game/Disaster/Red - Predator/Feeling Squirrely.png"
+    },
+    {
+        "id": 19,
+        "path": "Assets/Versions/0. Base Game/Disaster/Red - Predator/Fired Up.png"
+    },
+    {
+        "id": 20,
+        "path": "Assets/Versions/0. Base Game/Disaster/Red - Predator/Lil' Cannibal.png"
+    },
+    {
+        "id": 21,
+        "path": "Assets/Versions/0. Base Game/Disaster/Red - Predator/Love Hurts.png"
+    },
+    {
+        "id": 22,
+        "path": "Assets/Versions/0. Base Game/Disaster/Red - Predator/Shark with Legs.png"
+    },
+    {
+        "id": 23,
+        "path": "Assets/Versions/0. Base Game/Disaster/Red - Predator/Stomped.png"
+    },
+
+    {
+        "id": 24,
+        "path": "Assets/Versions/0. Base Game/Disaster/Meteor!.png"
+    },
+
+
+    {
+        "id": 25,
+        "path": "Assets/Versions/0. Base Game/Instant/Disaster Insurance.png"
+    },
+    {
+        "id": 26,
+        "path": "Assets/Versions/0. Base Game/Instant/Disaster Redirect.png"
+    },
+
+
+    {
+        "id": 27,
+        "path": "Assets/Versions/0. Base Game/Modifier/Score Booster.png"
+    },
+    {
+        "id": 28,
+        "path": "Assets/Versions/0. Base Game/Modifier/Score Sapper.png"
+    },
+    {
+        "id": 29,
+        "path": "Assets/Versions/0. Base Game/Modifier/Score Inversion.png"
+    },
+
+
+    {
+        "id": 30,
+        "path": "Assets/Versions/0. Base Game/Score/0b - Pet Rock.png"
+    },
+    {
+        "id": 31,
+        "path": "Assets/Versions/0. Base Game/Score/1a - Cool Stick.png"
+    },
+    {
+        "id": 32,
+        "path": "Assets/Versions/0. Base Game/Score/1b - Dino Grabber.png"
+    },
+    {
+        "id": 33,
+        "path": "Assets/Versions/0. Base Game/Score/2a - Handy Pan.png"
+    },
+    {
+        "id": 34,
+        "path": "Assets/Versions/0. Base Game/Score/2b - Grappling Snake.png"
+    },
+    {
+        "id": 35,
+        "path": "Assets/Versions/0. Base Game/Score/3a - Grave Maker.png"
+    },
+    {
+        "id": 36,
+        "path": "Assets/Versions/0. Base Game/Score/3b - Delicious smoothie.png"
+    },
+    {
+        "id": 37,
+        "path": "Assets/Versions/0. Base Game/Score/4a - Bonehead.png"
+    },
+    {
+        "id": 38,
+        "path": "Assets/Versions/0. Base Game/Score/4b - Fire Spray.png"
+    },
+    {
+        "id": 39,
+        "path": "Assets/Versions/0. Base Game/Score/5a - Run Home Bat.png"
+    },
+    {
+        "id": 40,
+        "path": "Assets/Versions/0. Base Game/Score/5b - Mouth Trap.png"
+    },
+    {
+        "id": 41,
+        "path": "Assets/Versions/0. Base Game/Score/6a - Bow and Dino.png"
+    },
+    {
+        "id": 42,
+        "path": "Assets/Versions/0. Base Game/Score/6b - Special Star Fruit.png"
+    },
+    {
+        "id": 43,
+        "path": "Assets/Versions/0. Base Game/Score/7a - Sting Stabber.png"
+    },
+    {
+        "id": 44,
+        "path": "Assets/Versions/0. Base Game/Score/7b - Treenoculars.png"
+    },
+    {
+        "id": 45,
+        "path": "Assets/Versions/0. Base Game/Score/8a - Iced Ptea.png"
+    },
+    {
+        "id": 46,
+        "path": "Assets/Versions/0. Base Game/Score/8b - Hungry Plant.png"
+    },
+    {
+        "id": 47,
+        "path": "Assets/Versions/0. Base Game/Score/9a - Meteor Cannon.png"
+    },
+    {
+        "id": 48,
+        "path": "Assets/Versions/0. Base Game/Score/9b - Flaming Chainsaw.png"
+    }
+]

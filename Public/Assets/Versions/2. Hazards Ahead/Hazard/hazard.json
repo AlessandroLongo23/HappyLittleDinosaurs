@@ -1,0 +1,100 @@
+[
+    {
+        "type": "hazard",
+        "copies": 1,
+        "name": "Brittle Bones",
+        "effect": "If this card is in your Hazard Area, you may only collect up to 7 points at the end of the round.",
+        "front_image_index": 101,
+        "back_image_index": 2
+    },
+    {
+        "type": "hazard",
+        "copies": 1,
+        "name": "Icy Roads",
+        "effect": "If this card is in your Hazard Area, you cannot play Disaster Insurance cards during scoring.",
+        "front_image_index": 102,
+        "back_image_index": 2
+    },
+    {
+        "type": "hazard",
+        "copies": 1,
+        "name": "Juice Cleanse",
+        "effect": "If this card is in your Hazard Area, ignore advantages from your Dinosaur Trait during scoring.",
+        "front_image_index": 103,
+        "back_image_index": 2
+    },
+    {
+        "type": "hazard",
+        "copies": 1,
+        "name": "Leechy Keen",
+        "effect": "If this card is in your Hazard Area, you cannot play more than 1 Instant card per round.",
+        "front_image_index": 104,
+        "back_image_index": 2
+    },
+    {
+        "type": "hazard",
+        "copies": 1,
+        "name": "Live. Laugh. Lava.",
+        "effect": "If this card is in your Hazard Area, the effects of Score Sapper and Score Booster cards you play are halved.",
+        "front_image_index": 105,
+        "back_image_index": 2
+    },
+
+    {
+        "type": "hazard",
+        "copies": 1,
+        "name": "Ollie Oops",
+        "effect": "If this card is in your Hazard Area, subtract 2 from the value of Point cards you play during Sudden Death.",
+        "front_image_index": 106,
+        "back_image_index": 2
+    },
+    {
+        "type": "hazard",
+        "copies": 1,
+        "name": "Restraining Order",
+        "effect": "If this card is in your Hazard Area, you cannot play Score Sapper cards during scoring.",
+        "front_image_index": 107,
+        "back_image_index": 2
+    },
+    {
+        "type": "hazard",
+        "copies": 1,
+        "name": "Rex Marks the Spot",
+        "effect": "If this card is in your Hazard Area, subtract 1 point from you score for each Instant card you play during scoring.",
+        "front_image_index": 108,
+        "back_image_index": 2
+    },
+    {
+        "type": "hazard",
+        "copies": 1,
+        "name": "Rock Slide",
+        "effect": "If this card is in your Hazard Area, double disadvantages from you Dinosaur Trait during scoring.",
+        "front_image_index": 109,
+        "back_image_index": 2
+    },
+    {
+        "type": "hazard",
+        "copies": 1,
+        "name": "Slippery Slope",
+        "effect": "If this card is in your Hazard Area, each round after scores have been calculated, move your Dinosaur meeple backward 1 space on your Escape Route.",
+        "front_image_index": 110,
+        "back_image_index": 2
+    },
+    
+    {
+        "type": "hazard",
+        "copies": 1,
+        "name": "Tarnished Plans",
+        "effect": "If this card is in your Hazard Area, you cannot play Score Booster cards during scoring.",
+        "front_image_index": 111,
+        "back_image_index": 2
+    },
+    {
+        "type": "hazard",
+        "copies": 1,
+        "name": "Up in Flames",
+        "effect": "If this card is in you Hazard Area, subtract 1 point from your score for each Hazard card in your Hazard Area during scoring.",
+        "front_image_index": 112,
+        "back_image_index": 2
+    }
+]

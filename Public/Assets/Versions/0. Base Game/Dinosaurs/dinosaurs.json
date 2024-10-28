@@ -1,0 +1,46 @@
+[
+    {
+        "name": "Stego",
+        "traits": {
+            "emotional": 0,
+            "natural": 0,
+            "predators": 0,
+            "meteor": 1,
+            "hazard": 0
+        },
+        "path": "Assets/Versions/0. Base Game/Dinosaurs/Stego.jpg"
+    },
+    {
+        "name": "Bad Luck Bronto",
+        "traits": {
+            "emotional": 0,
+            "natural": 1,
+            "predators": -1,
+            "meteor": 0,
+            "hazard": 0
+        },
+        "path": "Assets/Versions/0. Base Game/Dinosaurs/Bad Luck Bronto.jpg"
+    },
+    {
+        "name": "Nervous Rex",
+        "traits": {
+            "emotional": -1,
+            "natural": 0,
+            "predators": 1,
+            "meteor": 0,
+            "hazard": 0
+        },
+        "path": "Assets/Versions/0. Base Game/Dinosaurs/Nervous Rex.jpg"
+    },
+    {
+        "name": "Cry Ceratops",
+        "traits": {
+            "emotional": 1,
+            "natural": -1,
+            "predators": 0,
+            "meteor": 0,
+            "hazard": 0
+        },
+        "path": "Assets/Versions/0. Base Game/Dinosaurs/Cry Ceratops.jpg"
+    }
+]

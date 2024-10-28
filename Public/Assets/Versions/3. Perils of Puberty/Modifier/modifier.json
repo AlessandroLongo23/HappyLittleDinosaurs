@@ -1,0 +1,36 @@
+[
+    {
+        "type": "modifier",
+        "name": "BFF's Help",
+        "copies": 1,
+        "modifier": 3,
+        "effect": "Play this card during scoring. Add 3 points to any player's score this round.",
+        "front_image_index": 137,
+        "back_image_index": 0
+    },
+    {
+        "type": "modifier",
+        "name": "Frenemy's Curse",
+        "copies": 1,
+        "modifier": -3,
+        "effect": "Play this card during scoring. Subtract 3 points from any player's score this round.",
+        "front_image_index": 138,
+        "back_image_index": 0
+    },
+    {
+        "type": "modifier",
+        "name": "Joy of Puberty",
+        "copies": 1,
+        "effect": "Play this card during scoring. Move your Dinosaur meeple backward on your escape route up to 5 spaces. For each space you move backward, add 1 point to any player's score this round.",
+        "front_image_index": 139,
+        "back_image_index": 0
+    },
+    {
+        "type": "modifier",
+        "name": "Spiteful Bullying",
+        "copies": 1,
+        "effect": "Play this card during scoring. Move your Dinosaur meeple backward on your escape route up to 5 spaces. For each space you move backward, subtract 1 point from any player's score this round.",
+        "front_image_index": 140,
+        "back_image_index": 0
+    }
+]

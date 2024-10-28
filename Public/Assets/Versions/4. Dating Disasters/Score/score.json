@@ -1,0 +1,110 @@
+[
+    {
+        "type": "score",
+        "name": "Bouquet of Flowers",
+        "copies": 3,
+        "points": 4,
+        "effect": "Reveal the top 3 cards of the deck. You may add all Instant cards to your hand. Discard all other cards.",
+        "front_image_index": 176,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Wine Bottle",
+        "copies": 2,
+        "points": 4,
+        "effect": null,
+        "front_image_index": 177,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Broken High Heel",
+        "copies": 2,
+        "points": 5,
+        "effect": null,
+        "front_image_index": 178,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Teddy Bear",
+        "copies": 3,
+        "points": 5,
+        "effect": "At the end of the round, collect 5 points.",
+        "front_image_index": 179,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Bedazzled Belt",
+        "copies": 2,
+        "points": 6,
+        "effect": null,
+        "front_image_index": 180,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Heart Bomb",
+        "copies": 3,
+        "points": 6,
+        "effect": "At the end of the round, each player must discard all cards in their hand.",
+        "front_image_index": 181,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Stinky Perfume",
+        "copies": 2,
+        "points": 7,
+        "effect": null,
+        "front_image_index": 182,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Love Bug",
+        "copies": 2,
+        "points": 7,
+        "effect": "During scoring this round, each other player must subtract 1 point from their score for each Instant card you play this round.",
+        "front_image_index": 183,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Mixtape",
+        "copies": 1,
+        "points": 8,
+        "effect": null,
+        "front_image_index": 184,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Cold Feet",
+        "copies": 3,
+        "points": 8,
+        "effect": "During this round, you cannot play Instant cards.",
+        "front_image_index": 185,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Box of Chocolates",
+        "copies": 2,
+        "points": 9,
+        "effect": null,
+        "front_image_index": 186,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Minty Gum",
+        "copies": 1,
+        "points": 9,
+        "effect": "During scoring this round, the advantages of your Dinosaur Traits are doubled.",
+        "front_image_index": 187,
+        "back_image_index": 0
+    }
+]

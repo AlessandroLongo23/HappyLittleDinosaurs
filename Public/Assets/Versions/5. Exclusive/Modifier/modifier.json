@@ -1,0 +1,10 @@
+[
+    {
+        "type": "modifier",
+        "name": "Dino Lasso",
+        "copies": 1,
+        "effect": "Play this card during scoring. If you don't have the highest or lowest score in the round, collect points equal to the score of the highest-scoring player this round.",
+        "front_image_index": 194,
+        "back_image_index": 0
+    }
+]

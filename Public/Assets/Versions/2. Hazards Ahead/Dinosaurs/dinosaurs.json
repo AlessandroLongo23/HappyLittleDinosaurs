@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Easygoing Anky",
+        "traits": {
+            "emotional": 0,
+            "natural": -1,
+            "predators": 0,
+            "meteor": 0,
+            "hazard": 1
+        },
+        "path": "Assets/Versions/2. Hazards Ahead/Dinosaurs/Easygoing Anky.jpg"
+    },
+    {
+        "name": "Moody Mosasaur",
+        "traits": {
+            "emotional": -1,
+            "natural": 0,
+            "predators": 0,
+            "meteor": 0,
+            "hazard": 1
+        },
+        "path": "Assets/Versions/2. Hazards Ahead/Dinosaurs/Moody Mosasaur.jpg"
+    }
+]

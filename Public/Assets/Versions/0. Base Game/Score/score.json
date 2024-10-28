@@ -1,0 +1,173 @@
+[
+    {
+        "type": "score",
+        "name": "Pet Rock",
+        "copies": 4,
+        "points": 0,
+        "effect": "You may discard a Point card from you hand, then add its point value to your score this round.",
+        "front_image_index": 30,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Cool Stick",
+        "copies": 4,
+        "points": 1,
+        "effect": null,
+        "front_image_index": 31,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Dino Grabber",
+        "copies": 2,
+        "points": 1,
+        "effect": "You may look at another player's hand. Choose a card and add it to your hand.",
+        "front_image_index": 32,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Handy Pan",
+        "copies": 4,
+        "points": 2,
+        "effect": null,
+        "front_image_index": 33,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Grappling Snake",
+        "copies": 2,
+        "points": 2,
+        "effect": "You may swap this card with the Point card of the player to your right or left. You cannot swap for a card that has an effect.",
+        "front_image_index": 34,
+        "back_image_index": 0        
+    },
+    {
+        "type": "score",
+        "name": "Grave Maker",
+        "copies": 4,
+        "points": 3,
+        "effect": null,
+        "front_image_index": 35,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Delicious smoothie",
+        "copies": 2,
+        "points": 3,
+        "effect": "You may discard a Point card with an effect from your hand, then add its point value to your score this round.",
+        "front_image_index": 36,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Bonehead",
+        "copies": 4,
+        "points": 4,
+        "effect": null,
+        "front_image_index": 37,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Fire Spray",
+        "copies": 2,
+        "points": 4,
+        "effect": "You may discard up to 3 cards from your hand.",
+        "front_image_index": 38,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",    
+        "name": "Run Home Bat",
+        "copies": 4,
+        "points": 5,
+        "effect": null,
+        "front_image_index": 39,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Mouth Trap",
+        "copies": 2,
+        "points": 5,
+        "effect": "During scoring this round, switch the score of the highest-scoring player with the score of the lowest-scoring player after scores have been calculated.",
+        "front_image_index": 40,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",        
+        "name": "Bow and Dino",
+        "copies": 4,
+        "points": 6,
+        "effect": null,
+        "front_image_index": 41,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Special Star Fruit",
+        "copies": 2,
+        "points": 6,
+        "effect": "During scoring this round, double the effects of Score Booster and Score Sapper cards.",
+        "front_image_index": 42,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Sting Stabber",
+        "copies": 3,
+        "points": 7,
+        "effect": null,
+        "front_image_index": 43,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Treenoculars",
+        "copies": 2,
+        "points": 7,
+        "effect": "You may look at the top 2 cards in the deck. Choose a card and add it to your hand. Discard the other card.",
+        "front_image_index": 44,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Iced Ptea",
+        "copies": 3,
+        "points": 8,
+        "effect": null,
+        "front_image_index": 45,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Hungry Plant",
+        "copies": 1,
+        "points": 8,
+        "effect": "You may swap the Point cards of any two other players.",
+        "front_image_index": 46,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Meteor Cannon",
+        "copies": 3,
+        "points": 9,
+        "effect": null,
+        "front_image_index": 47,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Flaming Chainsaw",
+        "copies": 1,
+        "points": 9,
+        "effect": "During this round, all other Point card effects are ignored.",
+        "front_image_index": 48,
+        "back_image_index": 0
+    }
+]

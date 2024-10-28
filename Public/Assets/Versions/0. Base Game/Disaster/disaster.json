@@ -1,0 +1,227 @@
+[
+    {
+        "type": "disaster",
+        "categories": ["Emotional"],
+        "copies": 1,
+        "name": "Baddest Hair Day",
+        "description": "You try to cut your own hair. You watch as your self-esteem falls to the floor.",
+        "front_image_index": 0,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Emotional"],
+        "copies": 1,
+        "name": "Emergency Ex-it",
+        "description": "Looks like your ex is better off without you after all...",
+        "front_image_index": 1,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Emotional"],
+        "copies": 1,
+        "name": "Ghosted",
+        "description": "You get ghosted by your dino date. \"They must actually be dead\", you say to yourself as your tears salt your dinner for one.",
+        "front_image_index": 2,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Emotional"],
+        "copies": 1,
+        "name": "Left Behind... Again",
+        "description": "Your friends plan a road trip without you. The exhaust fumes hit you as the drive away.",
+        "front_image_index": 3,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Emotional"],
+        "copies": 1,
+        "name": "Ooh, Burn...",
+        "description": "The cookies you were looking forward to all day burned to a crisp.",
+        "front_image_index": 4,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Emotional"],
+        "copies": 1,
+        "name": "Outer Circle",
+        "description": "Are the other dinosaurs really talking about you? Yes.",
+        "front_image_index": 5,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Emotional"],
+        "copies": 1,
+        "name": "The Future is Bleak",
+        "description": "You visit a fortune teller and the crystal ball explodes... that can't be a good sign.",
+        "front_image_index": 6,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Emotional"],
+        "copies": 1,
+        "name": "The Sad Truth",
+        "description": "You lie awake at night thinking about how much of a disappointment you are.",
+        "front_image_index": 7,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Natural"],
+        "copies": 1,
+        "name": "SPA Day",
+        "description": "Your relaxing spa day turns into tragedy as you start to sink in hot tar.",
+        "front_image_index": 8,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Natural"],
+        "copies": 1,
+        "name": "Uncommon Cold",
+        "description": "Is it just a cough... or are you secretly dying? Time to start panicking.",
+        "front_image_index": 9,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Natural"],
+        "copies": 1,
+        "name": "Brigth Idea",
+        "description": "\"The sun isn't actually that bright\", they said. You proved them wrong.",
+        "front_image_index": 10,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Natural"],
+        "copies": 1,
+        "name": "Leaf me Alone",
+        "description": "You get cut by a particularly sharp leaf.",
+        "front_image_index": 11,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Natural"],
+        "copies": 1,
+        "name": "Downpour",
+        "description": "When it rains, it pours... but only on you.",
+        "front_image_index": 12,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Natural"],
+        "copies": 1,
+        "name": "This feels personal",
+        "description": "A small earthquake hits that sems to have happened only under you. You fall through a crack in the earth.",
+        "front_image_index": 13,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Natural"],
+        "copies": 1,
+        "name": "Trapped",
+        "description": "If a tree falls on you in a forest and no one is around to save you, is this you new life now?",
+        "front_image_index": 14,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Natural"],
+        "copies": 1,
+        "name": "Casual Afternoon Stroll",
+        "description": "You are hiking a volcano that's been dormant for thousands of years. It erupts.",
+        "front_image_index": 15,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Predators"],
+        "copies": 1,
+        "name": "A Day at the Beach",
+        "description": "Your beach day turns into a whale of a surprise...",
+        "front_image_index": 16,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Predators"],
+        "copies": 1,
+        "name": "Feeling Squirrely",
+        "description": "Life is going great!... Just kidding of course. You are attacked by sabertoothed squirrels.",
+        "front_image_index": 17,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Predators"],
+        "copies": 1,
+        "name": "Shark with Legs",
+        "description": "Just your average day, running in horror from a FREAKING LAND SHARK.",
+        "front_image_index": 18,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Predators"],
+        "copies": 1,
+        "name": "Armed and Dangerous",
+        "description": "The tiny dinos looked adorable until they threatened to kill you and your family.",
+        "front_image_index": 19,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Predators"],
+        "copies": 1,
+        "name": "Stomped",
+        "description": "You're crushed by a mega dino and your herd awkardly walks away.",
+        "front_image_index": 20,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Predators"],
+        "copies": 1,
+        "name": "Love Hurts",
+        "description": "All you want is to be loved. A boa constrictor gives you a \"hug\". You're thrilled.",
+        "front_image_index": 21,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Predators"],
+        "copies": 1,
+        "name": "Lil' Cannibal",
+        "description": "Mayby next time you should think twice bfore babysitting a carnivore.",
+        "front_image_index": 22,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Predators"],
+        "copies": 1,
+        "name": "Fired Up",
+        "description": "Prehistoric fire ants unleash their wrath on you for taking a nap on their hill.",
+        "front_image_index": 23,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Emotional", "Natural", "Predators"], 
+        "copies": 4,
+        "name": "Meteor!",
+        "description": "This card acts as any type of Disaster card.",
+        "front_image_index": 24,
+        "back_image_index": 1
+    }
+]

@@ -1,0 +1,205 @@
+[
+    {
+        "type": "disaster",
+        "categories": ["Emotional"],
+        "copies": 1,
+        "name": "Bad Plant Parent",
+        "effect": "When you add this Disaster card to you Disaster Area, you may add a Hazard token to any other player's Escape Route.",
+        "description": null,
+        "front_image_index": 81,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Emotional"],
+        "copies": 1,
+        "name": "Emo Phase",
+        "effect": "When you add this Disaster card to you Disaster Area, you may add a Hazard token to any other player's Escape Route.",
+        "description": null,
+        "front_image_index": 82,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Emotional"],
+        "copies": 1,
+        "name": "Free Samples",
+        "effect": "When you add this Disaster card to you Disaster Area, you may add a Hazard token to any other player's Escape Route.",
+        "description": null,
+        "front_image_index": 83,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Emotional"],
+        "copies": 1,
+        "name": "Incoming Call",
+        "effect": "When you add this Disaster card to you Disaster Area, you may add a Hazard token to any other player's Escape Route.",
+        "description": null,
+        "front_image_index": 84,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Emotional"],
+        "copies": 1,
+        "name": "Search History Shame",
+        "effect": "When you add this Disaster card to you Disaster Area, you may add a Hazard token to any other player's Escape Route.",
+        "description": null,
+        "front_image_index": 85,
+        "back_image_index": 1
+    },
+
+    {
+        "type": "disaster",
+        "categories": ["Natural"],
+        "copies": 1,
+        "name": "Crabification",
+        "effect": "When you add this Disaster card to you Disaster Area, you may add a Hazard token to any other player's Escape Route.",
+        "description": null,
+        "front_image_index": 86,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Natural"],
+        "copies": 1,
+        "name": "Hot Springs",
+        "effect": "When you add this Disaster card to you Disaster Area, you may add a Hazard token to any other player's Escape Route.",
+        "description": null,
+        "front_image_index": 87,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Natural"],
+        "copies": 1,
+        "name": "Not So Fungi",
+        "effect": "When you add this Disaster card to you Disaster Area, you may add a Hazard token to any other player's Escape Route.",
+        "description": null,
+        "front_image_index": 88,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Natural"],
+        "copies": 1,
+        "name": "Sinking Feeling",
+        "effect": "When you add this Disaster card to you Disaster Area, you may add a Hazard token to any other player's Escape Route.",
+        "description": null,
+        "front_image_index": 89,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Natural"],
+        "copies": 1,
+        "name": "Spoiled Rotten",
+        "effect": "When you add this Disaster card to you Disaster Area, you may add a Hazard token to any other player's Escape Route.",
+        "description": null,
+        "front_image_index": 90,
+        "back_image_index": 1
+    },
+    
+    {
+        "type": "disaster",
+        "categories": ["Predator"],
+        "copies": 1,
+        "name": "Bigfoot's Revenge",
+        "effect": "When you add this Disaster card to you Disaster Area, you may add a Hazard token to any other player's Escape Route.",
+        "description": null,
+        "front_image_index": 91,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Predator"],
+        "copies": 1,
+        "name": "Don't Trip",
+        "effect": "When you add this Disaster card to you Disaster Area, you may add a Hazard token to any other player's Escape Route.",
+        "description": null,
+        "front_image_index": 92,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Predator"],
+        "copies": 1,
+        "name": "Pyramid Scheme",
+        "effect": "When you add this Disaster card to you Disaster Area, you may add a Hazard token to any other player's Escape Route.",
+        "description": null,
+        "front_image_index": 93,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Predator"],
+        "copies": 1,
+        "name": "Red Carpet Regret",
+        "effect": "When you add this Disaster card to you Disaster Area, you may add a Hazard token to any other player's Escape Route.",
+        "description": null,
+        "front_image_index": 94,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Predator"],
+        "copies": 1,
+        "name": "To-Go Meal",
+        "effect": "When you add this Disaster card to you Disaster Area, you may add a Hazard token to any other player's Escape Route.",
+        "description": null,
+        "front_image_index": 95,
+        "back_image_index": 1
+    },
+
+    {
+        "type": "disaster",
+        "categories": ["Emotional", "Natural", "Predator"],
+        "copies": 3,
+        "name": "Coming In Hot",
+        "effect": "When you add this Disaster card to you Disaster Area, you may add a Hazard token to any other player's Escape Route.",
+        "description": null,
+        "front_image_index": 96,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": [],
+        "copies": 1,
+        "name": "Fruit Shower",
+        "effect": "When you add this Disaster card to you Disaster Area, move it to the bottom of the Disaster deck instead, then look at the top 2 cards of the deck. Choose a card and add it to your hand, then discard the other.",
+        "description": null,
+        "front_image_index": 97,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": [],
+        "copies": 1,
+        "name": "One of Us",
+        "effect": "When you add this Disaster card to you Disaster Area, move it to the bottom of the Disaster deck instead, then move a Hazard card in you Hazard Area to another player's Hazard Area.",
+        "description": null,
+        "front_image_index": 98,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": [],
+        "copies": 1,
+        "name": "Treasure Trove",
+        "effect": "When you add this Disaster card to you Disaster Area, move it to the bottom of the Disaster deck instead, then search the discard pile for a Point card and add it to your hand.",
+        "description": null,
+        "front_image_index": 99,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": [],
+        "copies": 1,
+        "name": "Wishful Thinking",
+        "effect": "When you add this Disaster card to you Disaster Area, move it to the bottom of the Disaster deck instead, then choose a player. Move that player's Dinosaur meeple backward 3 spaces on their Escape Route.",
+        "description": null,
+        "front_image_index": 100,
+        "back_image_index": 1
+    }
+]

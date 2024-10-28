@@ -1,0 +1,154 @@
+[
+    {
+        "type": "disaster",
+        "categories": ["Emotional"],
+        "copies": 1,
+        "name": "Art Class",
+        "effect": null,
+        "description": "You fall asleep in class and everyone draws on your face, including your teacher.",
+        "front_image_index": 121,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Emotional"],
+        "copies": 1,
+        "name": "Doomed to Failure",
+        "effect": null,
+        "description": "Your classmates vote you \"Most likely to fail.\"",
+        "front_image_index": 122,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Emotional"],
+        "copies": 1,
+        "name": "Fire Drill",
+        "effect": "This card counts as 2 Emotional Disasters.",
+        "description": "The fire alarm rings as you are changing into your gym clothes, and you're forced to go outside in your underwear.",
+        "front_image_index": 123,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Emotional"],
+        "copies": 1,
+        "name": "Say Cheese!",
+        "effect": null,
+        "description": "It's picture day, and you forgot how to smile.",
+        "front_image_index": 124,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Emotional"],
+        "copies": 1,
+        "name": "You're Out",
+        "effect": null,
+        "description": "You get hit in the face with a dodgeball in front of your crush. You don't catch the ball.",
+        "front_image_index": 125,
+        "back_image_index": 1
+    },
+
+    {
+        "type": "disaster",
+        "categories": ["Natural"],
+        "copies": 1,
+        "name": "Crabification",
+        "effect": null,
+        "description": "Your body hair is growing at an alarmingly accelerated rate. This doesn't seem normal.",
+        "front_image_index": 126,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Natural"],
+        "copies": 1,
+        "name": "Hot and Steamy",
+        "effect": null,
+        "description": "Your glasses fog up in while walking through the hot springs. You trip and fall into a geyser.",
+        "front_image_index": 127,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Natural"],
+        "copies": 1,
+        "name": "Oh Hail No",
+        "effect": null,
+        "description": "It's raining golf-ball sized hail, and you still have a 3-mile walk home.",
+        "front_image_index": 128,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Natural"],
+        "copies": 1,
+        "name": "Shocking!",
+        "effect": null,
+        "description": null,
+        "front_image_index": 129,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Natural"],
+        "copies": 1,
+        "name": "Total Loss",
+        "effect": "This card counts as 2 Natural Disasters.",
+        "description": "You just got your first car, and a giant boulder falls on top of it.",
+        "front_image_index": 130,
+        "back_image_index": 1
+    },
+    
+    {
+        "type": "disaster",
+        "categories": ["Predator"],
+        "copies": 1,
+        "name": "Hungry Hungry Dinos",
+        "effect": "This card counts as 2 Predatory Disasters.",
+        "description": "You are sent away to boarding school with carnivorous dinosaurs. Good luck.",
+        "front_image_index": 131,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Predator"],
+        "copies": 1,
+        "name": "Pet Problems",
+        "effect": null,
+        "description": "Your pet velociraptor ate your homework, and no one will believe you.",
+        "front_image_index": 132,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Predator"],
+        "copies": 1,
+        "name": "Rabid Rabbit",
+        "effect": null,
+        "description": "A bunny bites you while you retrieve your ball from your neighbor's lawn. It might have rabies.",
+        "front_image_index": 133,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Predator"],
+        "copies": 1,
+        "name": "Raving Madness",
+        "effect": null,
+        "description": "You are about to enter your first concert ever! Yay! Unfortunately, a herd of bigger dinos tramples you before you walk through the entrance.",
+        "front_image_index": 134,
+        "back_image_index": 1
+    },
+    {
+        "type": "disaster",
+        "categories": ["Predator"],
+        "copies": 1,
+        "name": "Super Murder Hornets",
+        "effect": null,
+        "description": "Your class goes on a field trip to the insectarium. Giant hornets attack you.",
+        "front_image_index": 135,
+        "back_image_index": 1
+    }
+]

@@ -1,0 +1,128 @@
+[
+    {
+        "type": "score",
+        "name": "Cool Stick",
+        "copies": 2,
+        "points": 1,
+        "effect": null,
+        "front_image_index": 67,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Good Luck Rod",
+        "copies": 2,
+        "points": 1,
+        "effect": "You may look at the top 3 cards in the deck. If at least one of them is a Point card, choose one of them and add its point value to your score this round, then discard all 3 cards.",
+        "front_image_index": 68,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Handy Pan",
+        "copies": 2,
+        "points": 2,
+        "effect": null,
+        "front_image_index": 69,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Grave Maker",
+        "copies": 2,
+        "points": 2,
+        "effect": null,
+        "front_image_index": 70,
+        "back_image_index": 0        
+    },
+    {
+        "type": "score",
+        "name": "Isopod Swap",
+        "copies": 2,
+        "points": 3,
+        "effect": "You may swap this card with the Point card of another player. You cannot swap for a card that has an effect.",
+        "front_image_index": 71,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Bonehead",
+        "copies": 2,
+        "points": 4,
+        "effect": null,
+        "front_image_index": 72,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Run Home Bat",
+        "copies": 2,
+        "points": 5,
+        "effect": null,
+        "front_image_index": 73,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",    
+        "name": "Voodoo Dino",
+        "copies": 2,
+        "points": 5,
+        "effect": "You may discard any number of Point cards from your hand. For each card discarded, you may subtract 1 point from any player's score this round.",
+        "front_image_index": 74,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Bow and Dino",
+        "copies": 2,
+        "points": 6,
+        "effect": null,
+        "front_image_index": 75,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Sting Stabber",
+        "copies": 2,
+        "points": 7,
+        "effect": null,
+        "front_image_index": 76,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Swiss Shears",
+        "copies": 1,
+        "points": 7,
+        "effect": "During scoring this round, the effects of Score Booster and Score Sapper cards played by any other player are halved.",
+        "front_image_index": 77,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Special Star Fruit",
+        "copies": 1,
+        "points": 8,
+        "effect": null,
+        "front_image_index": 78,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Meteor Cannon",
+        "copies": 1,
+        "points": 9,
+        "effect": null,
+        "front_image_index": 79,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Behemoth Blade",
+        "copies": 1,
+        "points": 9,
+        "effect": "During scoring this round, no player may play Instant cards.",
+        "front_image_index": 80,
+        "back_image_index": 0
+    }
+]

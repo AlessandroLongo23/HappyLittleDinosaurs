@@ -1,0 +1,137 @@
+[
+    {
+        "type": "score",
+        "name": "Trash into Treasure",
+        "copies": 2,
+        "points": 0,
+        "effect": "You may discard up to 3 cards. For each card you discard, add 3 points to your score this round.",
+        "front_image_index": 141,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Cool Stick",
+        "copies": 2,
+        "points": 1,
+        "effect": null,
+        "front_image_index": 142,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Handy Pan",
+        "copies": 2,
+        "points": 2,
+        "effect": null,
+        "front_image_index": 143,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Unwanted Lunch",
+        "copies": 2,
+        "points": 2,
+        "effect": "You may swap hands with another player.",
+        "front_image_index": 144,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Grave Maker",
+        "copies": 2,
+        "points": 3,
+        "effect": null,
+        "front_image_index": 145,
+        "back_image_index": 0        
+    },
+    {
+        "type": "score",
+        "name": "Bonehead",
+        "copies": 2,
+        "points": 4,
+        "effect": null,
+        "front_image_index": 146,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Handy Backpack",
+        "copies": 2,
+        "points": 4,
+        "effect": "During scoring this round, add 2 points to your score for each Disaster card in your Disaster area.",
+        "front_image_index": 147,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Run Home Bat",
+        "copies": 2,
+        "points": 5,
+        "effect": null,
+        "front_image_index": 148,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Bow and Dino",
+        "copies": 2,
+        "points": 6,
+        "effect": null,
+        "front_image_index": 149,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Ice Cream!",
+        "copies": 2,
+        "points": 6,
+        "effect": "If you have the highest score this round at the end of scoring, move a Disaster card from your Disaster Area to the bottom of the Disaster deck.",
+        "front_image_index": 150,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Sting Stabber",
+        "copies": 2,
+        "points": 7,
+        "effect": null,
+        "front_image_index": 151,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Iced Ptea",
+        "copies": 2,
+        "points": 8,
+        "effect": null,
+        "front_image_index": 152,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Really Thick Glasses",
+        "copies": 2,
+        "points": 8,
+        "effect": "Look at the top card of the Disaster deck. You may either place it back on top of the Disaster deck or move it to the bottom of the Disaster deck.",
+        "front_image_index": 153,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Meteor Cannon",
+        "copies": 2,
+        "points": 9,
+        "effect": null,
+        "front_image_index": 154,
+        "back_image_index": 0
+    },
+    {
+        "type": "score",
+        "name": "Extra Sharp Stick",
+        "copies": 2,
+        "points": 9,
+        "effect": "If you have the highest score this round at the end of scoring, collect 2 additional points.",
+        "front_image_index": 155,
+        "back_image_index": 0
+    }
+]

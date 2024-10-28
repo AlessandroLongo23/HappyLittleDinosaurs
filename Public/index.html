@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <title>Happy Little Dinosaurs</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" id="icon" href="Assets/icon.jpg">
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    
+    <script src="p5/p5.min.js"></script>
+    <script src="p5/p5.dom.min.js"></script>
+    <script src="p5/p5.sound.min.js"></script>
+    <script src="My Libraries/Mine.js"></script>
+
+    <input type="text" placeholder="Insert name..." id="player_name" autofocus autocomplete="off">
+    <button id="play" disabled onclick="document.getElementById('play').remove();">Play</button>
+
+    <script src="My Libraries/BoardGame/Card.js"></script>
+    <script src="My Libraries/BoardGame/Deck.js"></script>
+    <script src="My Libraries/BoardGame/Hand.js"></script>
+    <script src="My Libraries/BoardGame/Player.js"></script>
+    <script src="My Libraries/BoardGame/Button.js"></script>
+
+    <script src="HLD_Player.js"></script>
+    <script src="HLD_Card.js"></script>
+    <script src="HLD_Deck.js"></script>
+    <script src="HLD_Hand.js"></script>
+    <script src="HLD_Hero_Card.js"></script>
+    
+    <script src="main.js"></script>
+
+    <script>
+        const protocol = window.location.protocol == 'https:' ? 'wss:' : 'ws:';
+        const socket = new WebSocket(`${protocol}//${window.location.host}`);
+
+        ready = [];
+        game_phase = 'connection';
+
+        socket.addEventListener('open', () => {
+            console.log('WebSocket connection established');
+        });
+
+        socket.addEventListener('error', (error) => {
+            console.error('WebSocket error:', error);
+        });
+
+        socket.addEventListener('message', event => {
+            const data = JSON.parse(event.data);
+            if (data.type == 'setup') {
+                ready = data.ready_arr;
+            } else if (data.type == 'ready') {
+                ready = data.ready_arr;
+                if (ready.every(client => client))
+                    go_to_choice();
+            } else if (data.type == 'chosen') {
+                chosen = data.chosen_arr;
+                if (chosen.every(client => client))
+                    start_game(data.players_info);
+            } else if (data.type == 'update') {
+                game_phase = data.phase;
+
+                main_deck.fromJSON(data.main_deck);
+                disaster_deck.fromJSON(data.disaster_deck);
+                disaster_card.fromJSON(data.disaster_card);
+                discard_pile.fromJSON(data.discard_pile);
+                effect_to_play = data.effect_to_play;
+
+                for (let i = 0; i < players.length; i++)
+                    players[i].fromJSON(data.players[i]);
+            }
+        });
+
+        window.addEventListener('click', event => {
+            if (event.target.id == 'play') {
+                socket.send(JSON.stringify({ type: 'ready' }));
+                document.getElementById('player_name').disabled = true;
+            } else if (game_phase == 'choice') {
+                for (hero_card of hero_cards)
+                    if (hero_card.overlap(createVector(mouseX, mouseY)))
+                        socket.send(JSON.stringify({ type: 'chosen', dinosaur: hero_card.dinosaur }));
+            }
+        });
+
+        window.addEventListener('keyup', _ => {
+            if (game_phase != 'connection') return;
+
+            socket.send(JSON.stringify({ type: 'name', name: document.getElementById('player_name').value })); 
+        });
+    </script>
+</body>
+</html>
