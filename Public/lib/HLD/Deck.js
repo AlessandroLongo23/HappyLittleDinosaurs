@@ -1,6 +1,6 @@
-class HLD_Deck extends Deck {
-    constructor(cards, owner_name, face_up, pos, size, angle = 0, shuffle = true) {
-        super(cards, owner_name, face_up, pos, size, angle, shuffle);
+class HLDDeck extends Deck {
+    constructor(cards, faceUp, pos, size, ownerName = null, angle = 0, shuffle = true) {
+        super(cards, faceUp, pos, size, ownerName, angle, shuffle);
         this.revealed = false;
     }
 
@@ -12,9 +12,9 @@ class HLD_Deck extends Deck {
 
     fromJSON(data) {
         this.cards = []
-        for (let card_data of data.cards) {
+        for (let cardData of data.cards) {
             let card = new ImageCard(100);
-            card.fromJSON(card_data);
+            card.fromJSON(cardData);
             this.add(card);
         }
     }

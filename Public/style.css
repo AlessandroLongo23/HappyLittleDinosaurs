@@ -3,7 +3,7 @@
     src: url('Assets/Font/Gaegu/Gaegu-Bold.ttf') format('opentype');
 } */
 
-#player_name {
+#playerName {
     position: absolute;
     top: 70%;
     left: 50%;
@@ -15,7 +15,7 @@
     text-align: center;
 }
 
-#player_name:disabled {
+#playerName:disabled {
     background: #eee;
     cursor: not-allowed;
 }

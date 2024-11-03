@@ -9,10 +9,10 @@ const wss = new WebSocket.Server({ server });
 app.use(express.static('public'));
 
 let clients = [];
-let players_info = [];
+let playersInfo = [];
 
 wss.on('connection', (ws) => {
-    clients.push({ socket: ws, ready: false, chosen: false });
+    clients.push({ socket: ws, isReady: false, chosen: false });
 
     console.log('New client connected. Total clients:', clients.length);
     
@@ -23,15 +23,16 @@ wss.on('connection', (ws) => {
         if (data.type == 'ready') {
             for (let i = 0; i < clients.length; i++)
                 if (clients[i].socket == ws)
-                    clients[i].ready = true;
+                    clients[i].isReady = true;
 
             broadcastReady();
         } else if (data.type == 'chosen') {
             for (let i = 0; i < clients.length; i++) {
                 if (clients[i].socket == ws) {
                     clients[i].chosen = true;
-                    if (!players_info[i]) players_info[i] = {};
-                    players_info[i].dinosaur = data.dinosaur;
+                    if (!playersInfo[i]) 
+                        playersInfo[i] = {};
+                    playersInfo[i].dinosaur = data.dinosaur;
                 }
             }
 
@@ -39,8 +40,9 @@ wss.on('connection', (ws) => {
         } else if (data.type == 'name') {
             for (let i = 0; i < clients.length; i++) {
                 if (clients[i].socket == ws) {
-                    if (!players_info[i]) players_info[i] = {};
-                    players_info[i].name = data.name
+                    if (!playersInfo[i]) 
+                        playersInfo[i] = {};
+                    playersInfo[i].name = data.name
                 }
             }
         } else if (data.type == 'update') {
@@ -56,26 +58,26 @@ wss.on('connection', (ws) => {
 });
 
 function broadcastSetup() {
-    broadcast({ type: 'setup', ready_arr: clients.map(c => c.ready) });
+    broadcast({ type: 'setup', readyArray: clients.map(c => c.isReady) });
 }
 
 function broadcastChosen() {
-    broadcast({ type: 'chosen', chosen_arr: clients.map(c => c.chosen), players_info: players_info });
+    broadcast({ type: 'chosen', chosenArray: clients.map(c => c.chosen), playersInfo: playersInfo });
 }
 
 function broadcastReady() {
-    broadcast({ type: 'ready', ready_arr: clients.map(c => c.ready), players_info: players_info }); 
+    broadcast({ type: 'ready', readyArray: clients.map(c => c.isReady), playersInfo: playersInfo }); 
 }
 
 function broadcastUpdate(data) {
     broadcast({ 
         type: 'update', 
         phase: data.phase, 
-        main_deck: data.main_deck,
-        disaster_deck: data.disaster_deck,
-        disaster_card: data.disaster_card,
-        discard_pile: data.discard_pile,
-        effect_to_play: data.effect_to_play,
+        mainDeck: data.mainDeck,
+        disasterDeck: data.disasterDeck,
+        disasterCard: data.disasterCard,
+        discardPile: data.discardPile,
+        effectsToPlay: data.effectsToPlay,
         players: data.players,
     });
 }

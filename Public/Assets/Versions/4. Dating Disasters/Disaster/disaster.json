@@ -6,8 +6,8 @@
         "name": "Awkward Greeting",
         "effect": null,
         "description": "Your date says hello and you reply \"Good, how are you?\"",
-        "front_image_index": 156,
-        "back_image_index": 1
+        "frontImageIndex": 156,
+        "backImageIndex": 1
     },
     {
         "type": "disaster",
@@ -16,8 +16,8 @@
         "name": "Emergency Exit",
         "effect": null,
         "description": "Your date talks nonstop about their ex. You frantically search for an exit and realize you’re trapped.",
-        "front_image_index": 157,
-        "back_image_index": 1
+        "frontImageIndex": 157,
+        "backImageIndex": 1
     },
     {
         "type": "disaster",
@@ -26,8 +26,8 @@
         "name": "Friend Zoned",
         "effect": null,
         "description": "You have fallen into the bottomless pit of despair. The dreaded friend zone.",
-        "front_image_index": 158,
-        "back_image_index": 1
+        "frontImageIndex": 158,
+        "backImageIndex": 1
     },
     {
         "type": "disaster",
@@ -36,8 +36,8 @@
         "name": "I Love You",
         "effect": null,
         "description": "Your first date is going great. You try to say \"I love hot sauce.\" Instead you say \"I love you.\"",
-        "front_image_index": 159,
-        "back_image_index": 1
+        "frontImageIndex": 159,
+        "backImageIndex": 1
     },
     {
         "type": "disaster",
@@ -46,8 +46,8 @@
         "name": "Waiting for a Reply",
         "effect": "During scoring each round, you may add 1 point to your score for each Emotional Disaster card in your Disaster area.",
         "description": "You've been left on read for 66 million years.",
-        "front_image_index": 160,
-        "back_image_index": 1
+        "frontImageIndex": 160,
+        "backImageIndex": 1
     },
 
     {
@@ -57,8 +57,8 @@
         "name": "Caught in the Rain",
         "effect": "During scoring each round, you may add 1 point to your score for each Natural Disaster card in your Disaster area.",
         "description": "Your look was on point until it started raining acid.",
-        "front_image_index": 161,
-        "back_image_index": 1
+        "frontImageIndex": 161,
+        "backImageIndex": 1
     },
     { 
         "type": "disaster",
@@ -67,8 +67,8 @@
         "name": "Drifting Apart",
         "effect": null,
         "description": "Your date said even an ice age couldn't keep you apart. They lied.",
-        "front_image_index": 162,
-        "back_image_index": 1
+        "frontImageIndex": 162,
+        "backImageIndex": 1
     },
     {
         "type": "disaster",
@@ -77,8 +77,8 @@
         "name": "Table Manners",
         "effect": null,
         "description": "Your date chews loudly with their mouth open. You get caught in the crossfire.",
-        "front_image_index": 163,
-        "back_image_index": 1
+        "frontImageIndex": 163,
+        "backImageIndex": 1
     },
     {
         "type": "disaster",
@@ -87,8 +87,8 @@
         "name": "Wave Goodbye",
         "effect": null,
         "description": "It's the first date you've had in years. A tsunami strikes. You lose your date to the sea.",
-        "front_image_index": 164,
-        "back_image_index": 1
+        "frontImageIndex": 164,
+        "backImageIndex": 1
     },
     {
         "type": "disaster",
@@ -97,8 +97,8 @@
         "name": "You're on Fire",
         "effect": null,
         "description": "You’re at the bar chatting up dinos, and you’re on fire. Oh, wait. You’re literally on fire.",
-        "front_image_index": 165,
-        "back_image_index": 1
+        "frontImageIndex": 165,
+        "backImageIndex": 1
     },
 
     {
@@ -108,8 +108,8 @@
         "name": "Catfished",
         "effect": "During scoring each round, you may add 1 point to your score for each Predatory Disaster card in your Disaster area.",
         "description": "Your profile picture looked nothing like this!",
-        "front_image_index": 166,
-        "back_image_index": 1
+        "frontImageIndex": 166,
+        "backImageIndex": 1
     },
     {
         "type": "disaster",
@@ -118,8 +118,8 @@
         "name": "Coolest Dino Ever",
         "effect": null,
         "description": "You run into a dino who is so cool, you totally understand when they leave with your date.",
-        "front_image_index": 167,
-        "back_image_index": 1
+        "frontImageIndex": 167,
+        "backImageIndex": 1
     },
     {
         "type": "disaster",
@@ -128,8 +128,8 @@
         "name": "Pterrible Move",
         "effect": null,
         "description": "You accidentally liked your ex's photo. Your phone dies before you can unlike it.",
-        "front_image_index": 168,
-        "back_image_index": 1
+        "frontImageIndex": 168,
+        "backImageIndex": 1
     },
     {
         "type": "disaster",
@@ -138,8 +138,8 @@
         "name": "Picnic Pests",
         "effect": null,
         "description": "You plan a romantic picnic. Tiny dinos steal your food. And your date.",
-        "front_image_index": 169,
-        "back_image_index": 1
+        "frontImageIndex": 169,
+        "backImageIndex": 1
     },
     {
         "type": "disaster",
@@ -148,7 +148,7 @@
         "name": "Snack Attack",
         "effect": null,
         "description": "Your date said you're so cute they could eat you. You're starting to think they were serious.",
-        "front_image_index": 170,
-        "back_image_index": 1
+        "frontImageIndex": 170,
+        "backImageIndex": 1
     }
 ]

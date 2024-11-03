@@ -4,8 +4,8 @@
         "name": "Helping Hand",
         "copies": 2,
         "effect": "Play this card during scoring. Discard any number of Point cards with a value of 1, 2, or 3 from your hand, then add the point value of the discarded cards to your score this round.",
-        "front_image_index": 63,
-        "back_image_index": 0
+        "frontImageIndex": 63,
+        "backImageIndex": 0
     },
     {
         "type": "modifier",
@@ -13,16 +13,16 @@
         "copies": 3,
         "modifier": 2,
         "effect": "Play this card during scoring. Add 2 points to any player's score this round.",
-        "front_image_index": 64,
-        "back_image_index": 0
+        "frontImageIndex": 64,
+        "backImageIndex": 0
     },
     {
         "type": "modifier",
         "name": "Score Inversion",
         "copies": 1,
         "effect": "Play this card during scoring. Switch the score of the highest-scoring player with the score of the lowest-scoring player after scores have been calculated.",
-        "front_image_index": 65,
-        "back_image_index": 0
+        "frontImageIndex": 65,
+        "backImageIndex": 0
     },
     {
         "type": "modifier",
@@ -30,7 +30,7 @@
         "copies": 3,
         "modifier": -2,
         "effect": "Play this card during scoring. Subtract 2 points from any player's score this round.",
-        "front_image_index": 66,
-        "back_image_index": 0
+        "frontImageIndex": 66,
+        "backImageIndex": 0
     }
 ]

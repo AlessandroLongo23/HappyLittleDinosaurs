@@ -1,14 +1,14 @@
 [
     {
         "id": 0,
-        "path": "Assets/Backs/Back_0.png"
+        "path": "Assets/Backs/Back0.png"
     },
     {
         "id": 1,
-        "path": "Assets/Backs/Back_1.png"
+        "path": "Assets/Backs/Back1.png"
     },
     {
         "id": 2,
-        "path": "Assets/Backs/Back_2.png"
+        "path": "Assets/Backs/Back2.png"
     }
 ]

@@ -4,7 +4,7 @@
         "name": "Hazard Redirect",
         "copies": 2,
         "effect": "Play this card if you would add a Hazard token to your Escape Route this round. Add that Hazard token to another player's Escape Route instead.",
-        "front_image_index": 113,
-        "back_image_index": 0
+        "frontImageIndex": 113,
+        "backImageIndex": 0
     }
 ]

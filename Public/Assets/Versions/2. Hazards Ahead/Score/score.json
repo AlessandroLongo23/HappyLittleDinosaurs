@@ -5,8 +5,8 @@
         "copies": 2,
         "points": 2,
         "effect": "If you have the lowest score this round at the end of scoring, you may add a Hazard token to another player's Escape Route.",
-        "front_image_index": 114,
-        "back_image_index": 0
+        "frontImageIndex": 114,
+        "backImageIndex": 0
     },
     {
         "type": "score",
@@ -14,8 +14,8 @@
         "copies": 2,
         "points": 3,
         "effect": "Discard up to 3 cards and add a Hazard token to another player's Escape Route.",
-        "front_image_index": 115,
-        "back_image_index": 0
+        "frontImageIndex": 115,
+        "backImageIndex": 0
     },
     {
         "type": "score",
@@ -23,8 +23,8 @@
         "copies": 2,
         "points": 4,
         "effect": "During scoring this round, add 2 points to your score for each Hazard card in your Hazard Area.",
-        "front_image_index": 116,
-        "back_image_index": 0
+        "frontImageIndex": 116,
+        "backImageIndex": 0
     },
     {
         "type": "score",
@@ -32,8 +32,8 @@
         "copies": 2,
         "points": 5,
         "effect": "You may remove a Hazard card from your Hazard Area.",
-        "front_image_index": 117,
-        "back_image_index": 0
+        "frontImageIndex": 117,
+        "backImageIndex": 0
     },
     {
         "type": "score",
@@ -41,8 +41,8 @@
         "copies": 2,
         "points": 6,
         "effect": "If you have the lowest score this round at the end of scoring, you may remove a Hazard token from your Escape Route.",
-        "front_image_index": 118,
-        "back_image_index": 0        
+        "frontImageIndex": 118,
+        "backImageIndex": 0        
     },
     {
         "type": "score",
@@ -50,8 +50,8 @@
         "copies": 2,
         "points": 7,
         "effect": "If you have the highest score this round at the end of scoring, you may add a Hazard token to another player's Escape Route.",
-        "front_image_index": 119,
-        "back_image_index": 0
+        "frontImageIndex": 119,
+        "backImageIndex": 0
     },
     {
         "type": "score",
@@ -59,7 +59,7 @@
         "copies": 2,
         "points": 8,
         "effect": "You cannot play Instant cards this round.",
-        "front_image_index": 120,
-        "back_image_index": 0
+        "frontImageIndex": 120,
+        "backImageIndex": 0
     }
 ]

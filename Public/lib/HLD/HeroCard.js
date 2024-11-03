@@ -17,15 +17,15 @@ class HeroCard {
         imageMode(CENTER, CENTER);
         translate(this.pos);
 
-        let corner_radius = this.width / 32;
+        let cornerRadius = this.width / 32;
         drawingContext.save();
   
         drawingContext.beginPath();
         drawingContext.moveTo(-this.width / 2, -this.height / 2);
-        drawingContext.arcTo(this.width / 2, -this.height / 2, this.width / 2, this.height / 2, corner_radius);
-        drawingContext.arcTo(this.width / 2, this.height / 2, -this.width / 2, this.height / 2, corner_radius);
-        drawingContext.arcTo(-this.width / 2, this.height / 2, -this.width / 2, -this.height / 2, corner_radius);
-        drawingContext.arcTo(-this.width / 2, -this.height / 2, this.width / 2, -this.height / 2, corner_radius);
+        drawingContext.arcTo(this.width / 2, -this.height / 2, this.width / 2, this.height / 2, cornerRadius);
+        drawingContext.arcTo(this.width / 2, this.height / 2, -this.width / 2, this.height / 2, cornerRadius);
+        drawingContext.arcTo(-this.width / 2, this.height / 2, -this.width / 2, -this.height / 2, cornerRadius);
+        drawingContext.arcTo(-this.width / 2, -this.height / 2, this.width / 2, -this.height / 2, cornerRadius);
         drawingContext.closePath();
         
         drawingContext.clip();
@@ -44,12 +44,12 @@ class HeroCard {
             let traits = Object.keys(this.dinosaur.traits).map(key => { return { name: key, value: this.dinosaur.traits[key] }; });
             for (let trait of traits) {
                 if (this.dinosaur.traits[trait.name] > 0) {
-                    image(traits_images[traits.indexOf(trait)], -this.width * .35, this.height * .40, this.width * .12, this.width * .12);
+                    image(traitsImages[traits.indexOf(trait)], -this.width * .35, this.height * .40, this.width * .12, this.width * .12);
                     text("+" + this.dinosaur.traits[trait.name], -this.width * .18, this.height * .39);
                 }
 
                 if (this.dinosaur.traits[trait.name] < 0) {
-                    image(traits_images[traits.indexOf(trait)], this.width * .18, this.height * .40, this.width * .12, this.width * .12);
+                    image(traitsImages[traits.indexOf(trait)], this.width * .18, this.height * .40, this.width * .12, this.width * .12);
                     text(this.dinosaur.traits[trait.name], this.width * .35, this.height * .39);
                 }
             }

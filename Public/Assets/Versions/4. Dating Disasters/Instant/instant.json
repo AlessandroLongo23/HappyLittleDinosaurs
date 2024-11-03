@@ -4,7 +4,7 @@
         "name": "Awkward First Kiss",
         "copies": 2,
         "effect": "Play this card if you would add a Disaster card to your Disaster Area this round. Collect 5 points.",
-        "front_image_index": 171,
-        "back_image_index": 0
+        "frontImageIndex": 171,
+        "backImageIndex": 0
     }
 ]

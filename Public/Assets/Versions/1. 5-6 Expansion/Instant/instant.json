@@ -4,15 +4,15 @@
         "name": "Disaster Insurance",
         "copies": 2,
         "effect": "Play this card if you would add a Disaster card to your Disaster Area this round. Move that Disaster card to the bottom of the Disaster deck instead.",
-        "front_image_index": 61,
-        "back_image_index": 0
+        "frontImageIndex": 61,
+        "backImageIndex": 0
     },
     {
         "type": "instant",
         "name": "Disaster Redirect",
         "copies": 3,
         "effect": "Play this card if you would add a Disaster card to your Disaster Area this round. Add that Disaster card to another player's Disaster Area instead.",
-        "front_image_index": 62,
-        "back_image_index": 0
+        "frontImageIndex": 62,
+        "backImageIndex": 0
     }
 ]

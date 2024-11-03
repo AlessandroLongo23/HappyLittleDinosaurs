@@ -1,14 +1,14 @@
 class Deck {
-    constructor(cards, face_up, pos, size, angle = 0, shuffle = true, owner_name = null) {
+    constructor(cards, faceUp, pos, size, ownerName = null, angle = 0, shuffle = true) {
         this.cards = cards;
-        this.face_up = owner_name ? owner_name == my_name : face_up;
+        this.faceUp = ownerName ? ownerName == myName : faceUp;
         this.pos = pos;
         this.size = size;
         this.angle = angle;
-        this.owner_name = owner_name
+        this.ownerName = ownerName
 
         for (let card of this.cards) {
-            card.face_up = this.face_up;
+            card.faceUp = this.faceUp;
             card.pos = this.pos.copy();
             card.width = this.size.x;
             card.height = this.size.y;
@@ -20,10 +20,10 @@ class Deck {
 
     update() {
         for (let card of this.cards) {
-            card.face_up = this.face_up;
-            card.target_pos = this.pos.copy();
-            card.target_angle = this.angle;
-            card.target_width = this.size.x;
+            card.faceUp = this.faceUp;
+            card.targetPosition = this.pos.copy();
+            card.targetAngle = this.angle;
+            card.targetWidth = this.size.x;
             card.update();
         }
     }
@@ -67,9 +67,9 @@ class Deck {
     }
 
     add(card) {
-        card.target_pos = this.pos.copy();
-        card.target_angle = this.angle;
-        card.target_width = this.size.x;
+        card.targetPosition = this.pos.copy();
+        card.targetAngle = this.angle;
+        card.targetWidth = this.size.x;
         card.height = this.size.y;
         this.cards.push(card);
     }

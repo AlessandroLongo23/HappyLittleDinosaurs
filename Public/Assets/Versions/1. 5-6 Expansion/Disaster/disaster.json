@@ -5,8 +5,8 @@
         "copies": 1,
         "name": "Dissed",
         "description": "Someone got you with a \"your mom\" joke and you spend the rest of the day contemplating what your comeback should have been.",
-        "front_image_index": 49,
-        "back_image_index": 1
+        "frontImageIndex": 49,
+        "backImageIndex": 1
     },
     {
         "type": "disaster",
@@ -14,8 +14,8 @@
         "copies": 1,
         "name": "Parent of the Year",
         "description": "You only left the nest for five minutes...",
-        "front_image_index": 50,
-        "back_image_index": 1
+        "frontImageIndex": 50,
+        "backImageIndex": 1
     },
     {
         "type": "disaster",
@@ -23,8 +23,8 @@
         "copies": 1,
         "name": "Plot Twist",
         "description": "Your favorite book was turned into a movie. You gave it a chance. You will now live in regret forever.",
-        "front_image_index": 51,
-        "back_image_index": 1
+        "frontImageIndex": 51,
+        "backImageIndex": 1
     },
     {
         "type": "disaster",
@@ -32,8 +32,8 @@
         "copies": 1,
         "name": "Zit City",
         "description": "You have a big date tonight, and you woke up with the breakout of the century.",
-        "front_image_index": 52,
-        "back_image_index": 1
+        "frontImageIndex": 52,
+        "backImageIndex": 1
     },
     
     {
@@ -42,8 +42,8 @@
         "copies": 1,
         "name": "Allergies",
         "description": "You thought you were going to get honey, but all you feel is the sting of failure.",
-        "front_image_index": 53,
-        "back_image_index": 1
+        "frontImageIndex": 53,
+        "backImageIndex": 1
     },
     {
         "type": "disaster",
@@ -51,8 +51,8 @@
         "copies": 1,
         "name": "Oh, Poo",
         "description": "You come across a particularly offensive pile of poop. Does nobody clean up after their pets these days?",
-        "front_image_index": 54,
-        "back_image_index": 1
+        "frontImageIndex": 54,
+        "backImageIndex": 1
     },
     {
         "type": "disaster",
@@ -60,8 +60,8 @@
         "copies": 1,
         "name": "Prized Produce",
         "description": "The tomatoes you have been growing all summer were trampled by a pack of velociraptors. Your dream of winning \"Best Tomato Garden\" is crushed.",
-        "front_image_index": 55,
-        "back_image_index": 1
+        "frontImageIndex": 55,
+        "backImageIndex": 1
     },
     {
         "type": "disaster",
@@ -69,8 +69,8 @@
         "copies": 1,
         "name": "Ptornado!",
         "description": "Pterodactyls start flying rapidly ina circle directly above your head. This won't end well.",
-        "front_image_index": 56,
-        "back_image_index": 1
+        "frontImageIndex": 56,
+        "backImageIndex": 1
     },
 
     {
@@ -79,8 +79,8 @@
         "copies": 1,
         "name": "Getting Carried Away",
         "description": "You always wondered what it would be like to fly. Now you know.",
-        "front_image_index": 57,
-        "back_image_index": 1
+        "frontImageIndex": 57,
+        "backImageIndex": 1
     },
     {
         "type": "disaster",
@@ -88,8 +88,8 @@
         "copies": 1,
         "name": "Lower Back Pain",
         "description": "Next time you get sassy with a T-Rex, you'll know not to say \"bite me\".",
-        "front_image_index": 58,
-        "back_image_index": 1
+        "frontImageIndex": 58,
+        "backImageIndex": 1
     },
     {
         "type": "disaster",
@@ -97,8 +97,8 @@
         "copies": 1,
         "name": "Wild Chicken Attack",
         "description": "A wild chicken appears. And attacks.",
-        "front_image_index": 59,
-        "back_image_index": 1
+        "frontImageIndex": 59,
+        "backImageIndex": 1
     },
     {
         "type": "disaster",
@@ -106,7 +106,7 @@
         "copies": 1,
         "name": "Wrapped Up",
         "description": "A giant spider has turned you into a burrito. You remain hopeful that it'll decide it isn't hungry.",
-        "front_image_index": 60,
-        "back_image_index": 1
+        "frontImageIndex": 60,
+        "backImageIndex": 1
     }
 ]

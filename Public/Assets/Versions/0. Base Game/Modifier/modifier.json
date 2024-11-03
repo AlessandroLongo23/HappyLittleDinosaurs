@@ -5,8 +5,8 @@
         "copies": 5,
         "modifier": 2,
         "effect": "Play this card during scoring. Add 2 points to any player's score this round.",
-        "front_image_index": 27,
-        "back_image_index": 0
+        "frontImageIndex": 27,
+        "backImageIndex": 0
     },
     {
         "type": "modifier",
@@ -14,15 +14,15 @@
         "copies": 5,
         "modifier": -2,
         "effect": "Play this card during scoring. Subtract 2 points from any player's score this round.",
-        "front_image_index": 28,
-        "back_image_index": 0
+        "frontImageIndex": 28,
+        "backImageIndex": 0
     },
     {
         "type": "modifier",
         "name": "Score Inversion",
         "copies": 2,
         "effect": "Play this card during scoring. Switch the score of the highest-scoring player with the score of the lowest-scoring player after scores have been calculated.",
-        "front_image_index": 29,
-        "back_image_index": 0
+        "frontImageIndex": 29,
+        "backImageIndex": 0
     }
 ]

@@ -4,7 +4,7 @@
         "name": "Lucky Break",
         "copies": 1,
         "effect": "Play this card if you would add a Disaster card to your Disaster Area this round. Move that Disaster card to the bottom of the Disaster deck instead and collect 3 points.",
-        "front_image_index": 136,
-        "back_image_index": 0
+        "frontImageIndex": 136,
+        "backImageIndex": 0
     }
 ]

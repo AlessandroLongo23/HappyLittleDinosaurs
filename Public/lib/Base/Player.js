@@ -1,8 +1,8 @@
 class Player {
-    constructor(index, players_info) {
+    constructor(index, playersInfo) {
         this.index = index;
-        this.name = players_info[index].name;
-        this.angle = (this.index - players_info.indexOf(players_info.find(info => info.name == my_name))) * TWO_PI / players_info.length + HALF_PI; 
+        this.name = playersInfo[index].name;
+        this.angle = (this.index - playersInfo.indexOf(playersInfo.find(info => info.name == myName))) * TWO_PI / playersInfo.length + HALF_PI; 
         this.pos = createVector(width * .5, height * .5).add(p5.Vector.fromAngle(this.angle).mult(sqrt(sq(height * 0.4 * sin(this.angle)) + sq(width * 0.4 * cos(this.angle))))); 
     }
 
@@ -19,7 +19,7 @@ class Player {
     }
 
     update() {
-        this.angle = (this.index - players.indexOf(players.find(p => p.name == my_name))) * TWO_PI / players.length + HALF_PI;
+        this.angle = (this.index - players.indexOf(players.find(p => p.name == myName))) * TWO_PI / players.length + HALF_PI;
         this.pos = createVector(width * .5, height * .5).add(p5.Vector.fromAngle(this.angle).mult(sqrt(sq(height * 0.4 * sin(this.angle)) + sq(width * 0.4 * cos(this.angle))))); 
     }
 

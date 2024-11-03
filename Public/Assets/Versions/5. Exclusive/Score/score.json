@@ -5,7 +5,7 @@
         "copies": 1,
         "points": 7,
         "effect": "If you have the highest score this round after scores have been calculated, choose any player. That player must add the face-up Disaster card to their Disaster Area instead of the lowest-scoring player.",
-        "front_image_index": 195,
-        "back_image_index": 0
+        "frontImageIndex": 195,
+        "backImageIndex": 0
     }
 ]
