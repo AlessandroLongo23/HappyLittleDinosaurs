@@ -16,20 +16,20 @@ class HLDHand extends Hand {
     show() {
         cursor('default');
         rectMode(CENTER, CENTER);
-        let owner = players.find(p => p.name == this.ownerName);
+        let owner = players.find(p => p.name === this.ownerName);
         for (let card of this.cards) {
-            let disabled = owner.name == myName && (
-                (gameState instanceof SelectPhase && cardsInfo[card.frontImageIndex].type != 'score') ||
-                (gameState instanceof EffectPhase && cardsInfo[card.frontImageIndex].type != 'score') ||
-                (gameState instanceof ScoringPhase && cardsInfo[card.frontImageIndex].type != 'modifier') ||
-                (gameState instanceof DisasterPhase && cardsInfo[card.frontImageIndex].type != 'instant')
+            let disabled = owner.name === myName && (
+                (gameState instanceof SelectPhase && cardsInfo[card.frontImageIndex].type !== 'score') ||
+                (gameState instanceof EffectPhase && cardsInfo[card.frontImageIndex].type !== 'score') ||
+                (gameState instanceof ScoringPhase && cardsInfo[card.frontImageIndex].type !== 'modifier') ||
+                (gameState instanceof DisasterPhase && cardsInfo[card.frontImageIndex].type !== 'instant')
             );
             card.show(disabled);
         }
     }
 
-    update() {
-        super.update();
+    animate() {
+        super.animate();
         
         if (this.revealed) {
             for (let card of this.cards) {
@@ -37,8 +37,19 @@ class HLDHand extends Hand {
                 card.originalAngle = card.angle;
                 card.originalWidth = card.width;
                 card.faceUp = this.faceUp;
-                card.update();
+                card.animate();
             }
+        }
+    }
+
+    fill(deck, n) {
+        super.fill(deck, n);
+
+        while (!this.cards.map(c => cardsInfo[c.frontImageIndex].type).some(type => type === 'score')) {
+            while (this.cards.length)
+                discardPile.add(this.draw());
+
+            super.fill(deck, n);
         }
     }
 }

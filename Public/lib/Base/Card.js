@@ -30,16 +30,16 @@ class Card {
         this.ownerName = data.ownerName;
     }
 
-    update() {
-        if (this.targetAngle != null) 
+    animate() {
+        if (this.targetAngle !== null) 
             this.angle += (this.targetAngle - this.angle) * 0.1;
         
-        if (this.targetWidth != null) {
+        if (this.targetWidth !== null) {
             this.width += (this.targetWidth - this.width) * 0.1;
             this.height = this.width * 1.4;
         }
 
-        if (this.targetPosition != null) 
+        if (this.targetPosition !== null) 
             this.pos.add(p5.Vector.sub(this.targetPosition, this.pos).mult(0.1));
     }
 }

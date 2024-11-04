@@ -5,20 +5,20 @@ class ImageCard extends Card {
         this.backImageIndex = backImageIndex;
     }
 
-    update() {
-        if (this.targetAngle != null) 
-            this.angle += (this.targetAngle - this.angle) * 0.1;
+    animate() {
+        if (this.targetAngle !== null) 
+            this.angle += (this.targetAngle - this.angle) * animationSpeed;
 
-        if (this.targetWidth != null) {
-            this.width += (this.targetWidth - this.width) * 0.1;
+        if (this.targetWidth !== null) {
+            this.width += (this.targetWidth - this.width) * animationSpeed;
             this.height = this.width * 1.4;
         }
         
-        if (this.targetPosition != null) 
-            this.pos.add(p5.Vector.sub(this.targetPosition, this.pos).mult(0.1));
+        if (this.targetPosition !== null) 
+            this.pos.add(p5.Vector.sub(this.targetPosition, this.pos).mult(animationSpeed));
     }
 
-    overlap(a, b, w, h) {
+    isOverlapping(a, b, w, h) {
         return (
             a.x > b.x - w / 2 && 
             a.x < b.x + w / 2 && 
@@ -32,19 +32,19 @@ class ImageCard extends Card {
         this.targetAngle = this.originalAngle;
         this.targetPosition = this.originalPosition;
 
-        if (this.focused)
+        if (this.hovered)
             this.targetPosition.set(p5.Vector.add(this.originalPosition, p5.Vector.fromAngle(this.angle - HALF_PI).mult(this.height * .5)));
 
         if (gameState instanceof SelectPhase || gameState instanceof EffectPhase) {
             this.selected = (
-                this.focused && 
+                this.hovered && 
                 this.pos.dist(this.targetPosition) < 5 &&
-                this.overlap(createVector(mouseX, mouseY), this.pos, this.width, this.height)
+                this.isOverlapping(createVector(mouseX, mouseY), this.pos, this.width, this.height)
             )
         } else if (gameState instanceof ScoringPhase) {
             this.selected = (
                 this.pos.dist(this.targetPosition) < 5 &&
-                this.overlap(createVector(mouseX, mouseY), this.pos, this.width, this.height)
+                this.isOverlapping(createVector(mouseX, mouseY), this.pos, this.width, this.height)
             )
 
             let minDist = float('inf');
@@ -86,24 +86,6 @@ class ImageCard extends Card {
         rect(0, 0, this.width, this.height, cornerRadius);
 
         pop();
-    }
-
-    applyEffect() {
-        switch (cardsInfo[this.frontImageIndex].name) {
-            case "Pet Rock":
-                me.selectedCard.selected = me.selectedCard.focused = false;
-                discardPile.add(me.selectedCard);
-                me.hand.remove(me.selectedCard);
-                effectsToPlay.shift();
-                me.points += cardsInfo[me.selectedCard.frontImageIndex].points; 
-
-                if (effectsToPlay.length == 0)
-                    gameState = new ScoringPhase();
-
-                break;
-            case "Delicious Smoothie":
-
-        }
     }
 
     toJSON() {

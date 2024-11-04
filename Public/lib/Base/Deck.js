@@ -1,7 +1,7 @@
 class Deck {
     constructor(cards, faceUp, pos, size, ownerName = null, angle = 0, shuffle = true) {
         this.cards = cards;
-        this.faceUp = ownerName ? ownerName == myName : faceUp;
+        this.faceUp = ownerName ? ownerName === myName : faceUp;
         this.pos = pos;
         this.size = size;
         this.angle = angle;
@@ -16,16 +16,6 @@ class Deck {
         }
 
         if (shuffle) this.shuffle();
-    }
-
-    update() {
-        for (let card of this.cards) {
-            card.faceUp = this.faceUp;
-            card.targetPosition = this.pos.copy();
-            card.targetAngle = this.angle;
-            card.targetWidth = this.size.x;
-            card.update();
-        }
     }
 
     show() {
@@ -55,8 +45,26 @@ class Deck {
         this.cards.sort(() => Math.random() - .5);
     }
 
+    add(card) {
+        card.targetPosition = this.pos.copy();
+        card.targetAngle = this.angle;
+        card.targetWidth = this.size.x;
+        card.height = this.size.y;
+        this.cards.push(card);
+    }
+
+    animate() {
+        for (let card of this.cards) {
+            card.faceUp = this.faceUp;
+            card.targetPosition = this.pos.copy();
+            card.targetAngle = this.angle;
+            card.targetWidth = this.size.x;
+            card.animate();
+        }
+    }
+
     draw(card = null) {
-        if (this.cards.length == 0) 
+        if (this.cards.length === 0) 
             return;
 
         if (!card)
@@ -64,13 +72,5 @@ class Deck {
 
         this.cards.splice(this.cards.indexOf(card), 1);
         return card;
-    }
-
-    add(card) {
-        card.targetPosition = this.pos.copy();
-        card.targetAngle = this.angle;
-        card.targetWidth = this.size.x;
-        card.height = this.size.y;
-        this.cards.push(card);
     }
 }

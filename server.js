@@ -20,15 +20,15 @@ wss.on('connection', (ws) => {
 
     ws.on('message', (message) => {
         const data = JSON.parse(message);
-        if (data.type == 'ready') {
+        if (data.type === 'ready') {
             for (let i = 0; i < clients.length; i++)
-                if (clients[i].socket == ws)
+                if (clients[i].socket === ws)
                     clients[i].isReady = true;
 
             broadcastReady();
-        } else if (data.type == 'chosen') {
+        } else if (data.type === 'chosen') {
             for (let i = 0; i < clients.length; i++) {
-                if (clients[i].socket == ws) {
+                if (clients[i].socket === ws) {
                     clients[i].chosen = true;
                     if (!playersInfo[i]) 
                         playersInfo[i] = {};
@@ -37,15 +37,15 @@ wss.on('connection', (ws) => {
             }
 
             broadcastChosen();
-        } else if (data.type == 'name') {
+        } else if (data.type === 'name') {
             for (let i = 0; i < clients.length; i++) {
-                if (clients[i].socket == ws) {
+                if (clients[i].socket === ws) {
                     if (!playersInfo[i]) 
                         playersInfo[i] = {};
                     playersInfo[i].name = data.name
                 }
             }
-        } else if (data.type == 'update') {
+        } else if (data.type === 'update') {
             broadcastUpdate(data);
         }
     });
@@ -77,7 +77,7 @@ function broadcastUpdate(data) {
         disasterDeck: data.disasterDeck,
         disasterCard: data.disasterCard,
         discardPile: data.discardPile,
-        effectsToPlay: data.effectsToPlay,
+        effectCardsToPlay: data.effectCardsToPlay,
         players: data.players,
     });
 }

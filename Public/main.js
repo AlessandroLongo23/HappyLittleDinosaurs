@@ -1,9 +1,4 @@
-let mainDeck, disasterDeck, disasterCard;
-let images, dinosaursImages, traitsImages;
-let cardsInfo, dinosaursInfo;
-let gaegu;
 let heroCards = [];
-let gameState;
 let me;
 let readyArr = [];
 
@@ -34,47 +29,24 @@ function setup() {
     myName = '';
     players = [];
     cardsPerPlayer = 5;
+    animationSpeed = 0.15;
     gameState = new ConnectionPhase();
-    effectsToPlay = [];
+    effectCardsToPlay = [];
 
     passButton = new Button(createVector(width * .75, height - 50), width * .06, height * .04, 'PASS'); 
 }
 
-function draw() {
-    gameState.update()
+function draw() {    
+    gameState.update();
+    gameState.draw();
 }
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
+
+    // TODO recalculate all the positions
 }
 
 window.addEventListener('click', (event) => {
     gameState.handleClick(event);
 })
-
-function fromDisasterToPlay() {
-    for (let player of players)
-        player.pass = false;
-
-    lowestScorePlayer = players.reduce((min, player) => min?.score < player.score ? min : player, null);
-    highestScorePlayer = players.reduce((max, player) => max?.score > player.score ? max : player, null);
-
-    lowestScorePlayer.disasterHand.add(disasterCard.draw());
-    let disasters = lowestScorePlayer.disasterHand.cards.map(c => cardsInfo[c.frontImageIndex].categories).flatMap(c => c);
-    // if (disasters) {}
-
-    disasterCard.add(disasterDeck.draw());
-
-    highestScorePlayer.points += highestScorePlayer.score;
-    for (let player of players) {
-        player.score = 0;
-        player.points += player.disasterHand.cards.length;
-        if (player.points > 50)
-            player.win();
-
-        discardPile.add(player.submittedDeck.draw());
-        player.hand.fill(mainDeck, cardsPerPlayer);
-    }
-
-    gameState = new SelectPhase();
-}

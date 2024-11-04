@@ -2,42 +2,47 @@ class ChoicePhase extends GameState {
     constructor() {
         super();
         this.name = 'choice';
-    }
 
-    update() {
-        for (let x = 0; x <= width + texture.width / 2; x += texture.width / 2)
-            for (let y = 0; y <= height + texture.height / 2; y += texture.height / 2)
-                image(texture, x, y, texture.width / 2, texture.height / 2);
-    
-        let positions = [
+        this.positions = [
             createVector(width * .16, height * .33),
             createVector(width * .16, height * .75),
             createVector(width * .83, height * .33),
             createVector(width * .83, height * .75),
         ]
-        heroCards = dinosaursInfo.map((dinosaur, i) => new HeroCard(
+
+        this.heroCards = dinosaursInfo.map((dinosaur, i) => new HeroCard(
             dinosaursImages[i],
             dinosaur,
-            positions[i],
+            this.positions[i],
             height * .34, true
         ));
-    
+    }
+
+    draw() {
+        for (let x = 0; x <= width + texture.width / 2; x += texture.width / 2)
+            for (let y = 0; y <= height + texture.height / 2; y += texture.height / 2)
+                image(texture, x, y, texture.width / 2, texture.height / 2);
+
         cursor('default');
-        for (let heroCard of heroCards) {
-            heroCard.update();
-            heroCard.show();
-        }
+
+        this.heroCards.forEach(heroCard => heroCard.show());
+        this.selectedHeroCard?.show();
+    }
+
+    update() {
+        this.heroCards.forEach(heroCard => heroCard.checkHovering());
+        let hoveredHeroCard = heroCards.find(heroCard => heroCard.hovered);
     
-        if (heroCards.some(heroCard => heroCard.hovered)) {
-            let selectedHeroCard = new HeroCard(
-                heroCards.find(heroCard => heroCard.hovered).image,
-                heroCards.find(heroCard => heroCard.hovered).dinosaur,
+        // if any of the hero cards are hovered, a bigger version is shown in the middle
+        if (hoveredHeroCard) {
+            this.selectedHeroCard = new HeroCard(
+                hoveredHeroCard.image,
+                hoveredHeroCard.dinosaur,
                 createVector(width * .50, height * .54),
                 height * .51
             )
     
-            selectedHeroCard.update();
-            selectedHeroCard.show();
+            this.selectedHeroCard.update();
         }
     
         push();
@@ -48,8 +53,8 @@ class ChoicePhase extends GameState {
     }
 
     handleClick() {
-        for (let heroCard of heroCards)
-            if (heroCard.overlap(createVector(mouseX, mouseY)))
+        for (let heroCard of this.heroCards)
+            if (heroCard.isOverlapping(createVector(mouseX, mouseY)))
                 socket.send(JSON.stringify({ type: 'chosen', dinosaur: heroCard.dinosaur }));
     }
 
@@ -59,14 +64,14 @@ class ChoicePhase extends GameState {
             players[i] = new HLDPlayer(i, playersInfo);
             players[i].hand.fill(mainDeck, cardsPerPlayer);
         }
-        me = players.find(player => player.name == myName);
+        me = players.find(player => player.name === myName);
     
         disasterCard.add(disasterDeck.draw());
     
         gameState = new SelectPhase();
         frameCount = 0;
     
-        if (me == players[0])
+        if (me === players[0])
             sendUpdateToServer();
     }
 }

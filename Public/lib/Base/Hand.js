@@ -1,7 +1,7 @@
 class Hand {
     constructor(cards, ownerName, pos, angle) {
         this.cards = cards;
-        this.faceUp = ownerName == myName;
+        this.faceUp = ownerName === myName;
         this.pos = pos;
         this.angle = angle;
         this.cardsSlots = [];
@@ -47,7 +47,7 @@ class Hand {
     }
 
     drawCardFrom(deck) {
-        if (deck.cards.length == 0)
+        if (deck.cards.length === 0)
             return;
         
         let card = deck.cards.pop();
@@ -61,7 +61,7 @@ class Hand {
     }
 
     remove(card) {
-        this.cards = this.cards.filter(c => c != card);
+        this.cards = this.cards.filter(c => c !== card);
         this.reorganize();
     }
 
@@ -70,13 +70,13 @@ class Hand {
         this.reorganize();
     }
 
-    update() {
+    animate() {
         for (let i = 0; i < this.cards.length; i++) {
             this.cards[i].originalPosition = this.cardsSlots[i].pos.copy();
             this.cards[i].originalAngle = this.cardsSlots[i].angle;
             this.cards[i].originalWidth = this.cardsSlots[i].width;
             this.cards[i].faceUp = this.faceUp;
-            this.cards[i].update();
+            this.cards[i].animate();
         }
     }
 

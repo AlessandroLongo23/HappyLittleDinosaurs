@@ -1,20 +1,24 @@
-// let versions = [
-//     "0. Base Game",
-//     "1. 5-6 Expansion",
-//     "2. Hazards Ahead",
-//     "3. Perils of Puberty",
-//     "4. Dating Disasters",
-//     "5. Exclusive", 
-//     "6. Vinyl",
-// ]
+let versions = [
+    "0. Base Game",
+    // "1. 5-6 Expansion",
+    // "2. Hazards Ahead",
+    // "3. Perils of Puberty",
+    // "4. Dating Disasters",
+    // "5. Exclusive", 
+    // "6. Vinyl",
+]
 
-function loadImageAsync(path) {
+let mainDeck, disasterDeck, disasterCard;
+let images, dinosaursImages, traitsImages;
+let cardsInfo, dinosaursInfo;
+
+const loadImageAsync = (path) => {
     return new Promise((resolve, reject) => {
         const img = loadImage(path, resolve, () => reject(new Error('Failed to load image at ' + path)));
     });
 }
 
-async function fetchFrontImagesInfo() {
+const fetchFrontImagesInfo = async () => {
     try {
         let frontImagesInfo = [];
         
@@ -34,7 +38,7 @@ async function fetchFrontImagesInfo() {
     }
 }
 
-async function fetchBackImagesInfo() {
+const fetchBackImagesInfo = async () => {
     try {
         let response = await fetch('Assets/Backs/images.json');
         if (!response.ok) 
@@ -48,7 +52,7 @@ async function fetchBackImagesInfo() {
     }
 }
 
-async function fetchTraitsImages() {
+const fetchTraitsImages = async () => {
     try {
         const response = await fetch('Assets/Traits/traits.json');
         if (!response.ok) 
@@ -62,7 +66,7 @@ async function fetchTraitsImages() {
     }
 }
 
-async function fetchDinosaursInfo() {
+const fetchDinosaursInfo = async () => {
     try {
         const response = await fetch('Assets/Versions/0. Base Game/Dinosaurs/dinosaurs.json');
         if (!response.ok) 
@@ -76,50 +80,48 @@ async function fetchDinosaursInfo() {
     }
 }
 
-async function createCards() {
+const createCards = async () => {
     try {
         let disasterCardsInfo = [];
-        let hazardCardsInfo = [];
-        let instantCardsInfo = [];
-        let modifierCardsInfo = [];
-        let scoreCardsInfo = [];
-        let response;
-
-        versions = ["0. Base Game", "1. 5-6 Expansion", "2. Hazards Ahead", "3. Perils of Puberty", "4. Dating Disasters", "5. Exclusive", "6. Vinyl"];
-        for (let version of versions) {
-            response = await fetch('Assets/Versions/' + version + '/Disaster/disaster.json');
+        let disasterCardsVersions = ["0. Base Game", "1. 5-6 Expansion", "2. Hazards Ahead", "3. Perils of Puberty", "4. Dating Disasters", "5. Exclusive", "6. Vinyl"];
+        for (let version of disasterCardsVersions.filter(v => versions.includes(v))) {
+            let response = await fetch('Assets/Versions/' + version + '/Disaster/disaster.json');
             if (!response.ok) throw new Error('Network response was not ok ' + response.statusText);
             disasterCardsInfo.push(await response.json());
         }
         disasterCardsInfo = disasterCardsInfo.flat();
 
-        versions = ["2. Hazards Ahead"];
-        for (let version of versions) {
-            response = await fetch('Assets/Versions/' + version + '/Hazard/hazard.json');
+        let hazardCardsInfo = [];
+        let hazardsCardsVersions = ["2. Hazards Ahead"];
+        for (let version of hazardsCardsVersions.filter(v => versions.includes(v))) {
+            let response = await fetch('Assets/Versions/' + version + '/Hazard/hazard.json');
             if (!response.ok) throw new Error('Network response was not ok ' + response.statusText);
             hazardCardsInfo.push(await response.json());
         }
         hazardCardsInfo = hazardCardsInfo.flat();
 
-        versions = ["0. Base Game", "1. 5-6 Expansion", "2. Hazards Ahead", "3. Perils of Puberty", "4. Dating Disasters"];
-        for (let version of versions) {
-            response = await fetch('Assets/Versions/' + version + '/Instant/instant.json');
+        let instantCardsInfo = [];
+        let instantCardsVersions = ["0. Base Game", "1. 5-6 Expansion", "2. Hazards Ahead", "3. Perils of Puberty", "4. Dating Disasters"];
+        for (let version of instantCardsVersions.filter(v => versions.includes(v))) {
+            let response = await fetch('Assets/Versions/' + version + '/Instant/instant.json');
             if (!response.ok) throw new Error('Network response was not ok ' + response.statusText);
             instantCardsInfo.push(await response.json());
         }
         instantCardsInfo = instantCardsInfo.flat();
 
-        versions = ["0. Base Game", "1. 5-6 Expansion", "3. Perils of Puberty", "4. Dating Disasters", "5. Exclusive"];
-        for (let version of versions) {
-            response = await fetch('Assets/Versions/' + version + '/Modifier/modifier.json');
+        let modifierCardsInfo = [];
+        let modifierCardsVersions = ["0. Base Game", "1. 5-6 Expansion", "3. Perils of Puberty", "4. Dating Disasters", "5. Exclusive"];
+        for (let version of modifierCardsVersions.filter(v => versions.includes(v))) {
+            let response = await fetch('Assets/Versions/' + version + '/Modifier/modifier.json');
             if (!response.ok) throw new Error('Network response was not ok ' + response.statusText);
             modifierCardsInfo.push(await response.json());
         }
         modifierCardsInfo = modifierCardsInfo.flat();
 
-        versions = ["0. Base Game", "1. 5-6 Expansion", "2. Hazards Ahead", "3. Perils of Puberty", "4. Dating Disasters", "5. Exclusive"];
-        for (let version of versions) {
-            response = await fetch('Assets/Versions/' + version + '/Score/score.json');
+        let scoreCardsInfo = [];
+        let scoreCardsVersions = ["0. Base Game", "1. 5-6 Expansion", "2. Hazards Ahead", "3. Perils of Puberty", "4. Dating Disasters", "5. Exclusive"];
+        for (let version of scoreCardsVersions.filter(v => versions.includes(v))) {
+            let response = await fetch('Assets/Versions/' + version + '/Score/score.json');
             if (!response.ok) throw new Error('Network response was not ok ' + response.statusText);
             scoreCardsInfo.push(await response.json());
         }
@@ -128,7 +130,7 @@ async function createCards() {
         cardsInfo = disasterCardsInfo.concat(hazardCardsInfo).concat(instantCardsInfo).concat(modifierCardsInfo).concat(scoreCardsInfo);
         cardsInfo.sort((a, b) => a.frontImageIndex - b.frontImageIndex);
         const mainDeckCards = cardsInfo
-            .filter(info => info.type == 'score' || info.type == 'modifier' || info.type == 'instant')
+            .filter(info => info.type === 'score' || info.type === 'modifier' || info.type === 'instant')
             .flatMap(info => 
                 Array.from({ length: info.copies }, () => new ImageCard(
                     100,
@@ -138,7 +140,7 @@ async function createCards() {
             );
 
         const disasterDeckCards = cardsInfo
-            .filter(info => info.type == 'disaster')
+            .filter(info => info.type === 'disaster')
             .flatMap(info => 
                 Array.from({ length: info.copies }, () => new ImageCard(
                     100,
@@ -148,7 +150,7 @@ async function createCards() {
             );
 
         const hazardDeckCards = cardsInfo
-            .filter(info => info.type == 'hazard')
+            .filter(info => info.type === 'hazard')
             .flatMap(info => 
                 Array.from({ length: info.copies }, () => new ImageCard(
                     100,

@@ -25,10 +25,10 @@ class Button {
     }
 
     update() {
-        this.hovered = this.overlap(createVector(mouseX, mouseY));
+        this.hovered = this.isOverlapping(createVector(mouseX, mouseY));
     }
 
-    overlap(pos) {
+    isOverlapping(pos) {
         return (
             pos.x > this.pos.x - this.width / 2 && 
             pos.x < this.pos.x + this.width / 2 && 

@@ -23,29 +23,34 @@
     <input type="text" placeholder="Insert name..." id="playerName" autofocus autocomplete="off">
     <button id="play" disabled onclick="document.getElementById('play').remove();">Play</button>
 
+    <!-- Base object classes -->
     <script src="lib/Base/Card.js"></script>
     <script src="lib/Base/Deck.js"></script>
     <script src="lib/Base/Hand.js"></script>
     <script src="lib/Base/Player.js"></script>
     <script src="lib/Base/Button.js"></script>
 
+    <!-- Game specific object classes -->
     <script src="lib/HLD/Player.js"></script>
     <script src="lib/HLD/Card.js"></script>
     <script src="lib/HLD/Deck.js"></script>
     <script src="lib/HLD/Hand.js"></script>
     <script src="lib/HLD/HeroCard.js"></script>
 
-    <script src="GameStates/GameState.js"></script>
-    <script src="GameStates/ConnectionPhase.js"></script>
-    <script src="GameStates/ChoicePhase.js"></script>
-    <script src="GameStates/SetupPhase.js"></script>
+    <!-- Game States -->
+    <script src="lib/Base/GameState.js"></script>
+
+    <script src="lib/HLD/GameStates/Preparation/ConnectionPhase.js"></script>
+    <script src="lib/HLD/GameStates/Preparation/ChoicePhase.js"></script>
+    <script src="lib/HLD/GameStates/Preparation/SetupPhase.js"></script>
     
-    <script src="GameStates/PlayPhase.js"></script>
-    <script src="GameStates/SelectPhase.js"></script>
-    <script src="GameStates/EffectPhase.js"></script>
-    <script src="GameStates/ScoringPhase.js"></script>
-    <script src="GameStates/DisasterPhase.js"></script>
-    
+    <script src="lib/HLD/GameStates/Play/PlayPhase.js"></script>
+    <script src="lib/HLD/GameStates/Play/SelectPhase.js"></script>
+    <script src="lib/HLD/GameStates/Play/EffectPhase.js"></script>
+    <script src="lib/HLD/GameStates/Play/ScoringPhase.js"></script>
+    <script src="lib/HLD/GameStates/Play/DisasterPhase.js"></script>
+
+    <!-- main script -->
     <script src="main.js"></script>
     <script src="socket.js"></script>
     <script src="loadAssets.js"></script>

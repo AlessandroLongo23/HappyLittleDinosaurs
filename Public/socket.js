@@ -1,4 +1,4 @@
-const protocol = window.location.protocol == 'https:' ? 'wss:' : 'ws:';
+const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
 const socket = new WebSocket(`${protocol}//${window.location.host}`);
 
 socket.addEventListener('open', () => {
@@ -59,11 +59,11 @@ socket.addEventListener('message', event => {
             disasterDeck.fromJSON(data.disasterDeck);
             disasterCard.fromJSON(data.disasterCard);
             discardPile.fromJSON(data.discardPile);
-            effectsToPlay = data.effectsToPlay.map(c => {
+            effectCardsToPlay = data.effectCardsToPlay.map(c => {
                 let card = new ImageCard(100);
                 card.fromJSON(c);
                 return card;
-            });
+            }) || [];
     
             for (let i = 0; i < players.length; i++)
                 players[i].fromJSON(data.players[i]);
@@ -80,7 +80,7 @@ const sendUpdateToServer = () => {
         disasterDeck: disasterDeck.toJSON(),
         disasterCard: disasterCard.toJSON(),
         discardPile: discardPile.toJSON(),
-        effectsToPlay: effectsToPlay.map(c => c.toJSON()),
+        effectCardsToPlay: effectCardsToPlay.map(c => c.toJSON()),
         players: players.map(p => p.toJSON()),
     }));
 }

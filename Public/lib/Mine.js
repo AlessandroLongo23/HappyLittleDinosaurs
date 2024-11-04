@@ -61,7 +61,7 @@ function spring(sx, sy, ex, ey, n, a) {
     noFill()
     for (var i = 1.5; i <= n - 1.5; i += 0.5) {
         var d = createVector((sx * (n - i) + ex * i) / n, (sy * (n - i) + ey * i) / n)
-        if (i % 1 == 0) {
+        if (i % 1 === 0) {
             arc(d.x, d.y, len / 4, len / 4, 0, PI)
         } else {
             arc(d.x, d.y, len * 5 / 4, 2 * a, PI, 0)
@@ -145,7 +145,7 @@ function grid(sqx, sqy, lx, ly) {
 function hexaGrid(len) {
     for (var x = 0; x <= width; x += len * 3 / 2) {
         for (var y = 0; y <= height; y += len * sqrt(3)) {
-            if (x / (len * 3 / 2) % 2 == 0)
+            if (x / (len * 3 / 2) % 2 === 0)
                 polygon(x, y, len, 6)
             else
                 polygon(x, y + len * sqrt(3) / 2, len, 6)
@@ -159,7 +159,7 @@ function log_b(b, n) {
 
 function findFirst(arr, n, start_index = 0) {
     for (var i = start_index; i < arr.length; i++)
-        if (arr[i] == n)
+        if (arr[i] === n)
             return i;
 
     return -1;
@@ -168,7 +168,7 @@ function findFirst(arr, n, start_index = 0) {
 // cerca un elemento in un array e ritorna l'indice del'ultimo trovato
 function findLast(arr, n) {
     for (var i = arr.length - 1; i >= 0; i--) {
-        if (arr[i] == n) {
+        if (arr[i] === n) {
             return i
         }
     }
@@ -254,7 +254,7 @@ function invert(arr) {
 function containsVector(vector, element) {
     var present = false
     for (var i = 0; i < vector.length; i++) {
-        if (vector[i].x == element.x && vector[i].y == element.y) {
+        if (vector[i].x === element.x && vector[i].y === element.y) {
             present = true
         }
     }
@@ -264,7 +264,7 @@ function containsVector(vector, element) {
 function contains(vector, element) {
     var present = false
     for (var i = 0; i < vector.length; i++) {
-        if (vector[i] == element) {
+        if (vector[i] === element) {
             present = true
         }
     }
@@ -282,7 +282,7 @@ function mod(n, m) {
 function coprime(a, b) {
     common_factors = []
     for (var i = 2; i <= min(abs(a), abs(b)); i++) {
-        if (abs(a / i) % 1 == 0 && abs(b / i) % 1 == 0) {
+        if (abs(a / i) % 1 === 0 && abs(b / i) % 1 === 0) {
             common_factors.push(i)
         }
     }
@@ -291,14 +291,14 @@ function coprime(a, b) {
 }
 
 function min_terms(a, b) {
-    while (coprime(a, b) != 0) {
+    while (coprime(a, b) !== 0) {
         a /= common_factors[common_factors.length - 1]
         b /= common_factors[common_factors.length - 1]
     }
 
-    if (b == 1) {
+    if (b === 1) {
         return "" + a
-    } else if (b == -1) {
+    } else if (b === -1) {
         return "" + (-a)
     } else if (a / b > 0) {
         if (a > 0) {
@@ -317,7 +317,7 @@ function min_terms(a, b) {
 
 function prime(n) {
     for (var i = 2; i <= ceil(sqrt(n)); i++) {
-        if (n % i == 0 && n != i) {
+        if (n % i === 0 && n !== i) {
             return false
         }
     }
@@ -327,7 +327,7 @@ function prime(n) {
 function factors(n) {
     var f = []
     for (var i = 2; i < n; i++) {
-        if (n % i == 0) {
+        if (n % i === 0) {
             f.push(i)
         }
     }
@@ -339,7 +339,7 @@ function prime_factors(n) {
     while (n > 1) {
         var i = 2
         while (i <= n) {
-            if (n % i == 0) {
+            if (n % i === 0) {
                 n /= i
                 f.push(i)
                 i = 1
@@ -353,7 +353,7 @@ function prime_factors(n) {
 function distinct_prime_factors(n) {
     var f = []
     for (var i = 2; i < ceil(sqrt(n)); i++)
-        if (n % i == 0 && prime(i))
+        if (n % i === 0 && prime(i))
             f.push(i)
 
     return f
@@ -380,7 +380,7 @@ function root(num, index) {
 // massimo comun divisore
 function mcd(a = 0, b = 0) {
     var r
-    while (b != 0) {
+    while (b !== 0) {
         r = a % b
         a = b
         b = r
@@ -405,7 +405,7 @@ function pond_random(arr, rate) {
 // disegno una freccia
 function arrow(sX, sY, eX, eY) {
     push()
-    if (sX != eX || sY != eY) {
+    if (sX !== eX || sY !== eY) {
         line(sX, sY, eX, eY)
         var teta = atan2(eY - sY, eX - sX)
         translate(eX, eY)
@@ -467,7 +467,7 @@ function inversivePoint(circle, pt) {
 function inversiveCircle(o, c) {
     var d = dist(c.pos.x, c.pos.y, o.pos.x, o.pos.y)
     var invC
-    if (d != 0) {
+    if (d !== 0) {
         var a = createVector(
             o.pos.x + (d - c.rad) * (c.pos.x - o.pos.x) / d,
             o.pos.y + (d - c.rad) * (c.pos.y - o.pos.y) / d
@@ -507,7 +507,7 @@ function inversiveCircle(o, c) {
 function inversiveSphere(o, c) {
     var d = dist(c.pos.x, c.pos.y, c.pos.z, o.pos.x, o.pos.y, o.pos.z)
     var invS
-    if (d != 0) {
+    if (d !== 0) {
         var a = createVector(
             o.pos.x + (d - c.rad) * (c.pos.x - o.pos.x) / d,
             o.pos.y + (d - c.rad) * (c.pos.y - o.pos.y) / d,

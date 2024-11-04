@@ -4,7 +4,7 @@ class HLDPlayer extends Player {
         
         this.submittedDeck = new HLDDeck(
             [],
-            myName == this.name,
+            myName === this.name,
             this.pos.copy().sub(p5.Vector.fromAngle(this.angle).mult(width * .10)),
             createVector(width * .10, width * .14), this.angle - HALF_PI,
             this.name
@@ -12,6 +12,7 @@ class HLDPlayer extends Player {
         this.hand = new HLDHand([], this.name, this.pos, this.angle);
         this.disasterHand = new HLDHand([], this.name, this.pos.copy().add(p5.Vector.fromAngle(this.angle - HALF_PI).mult(width * .33)), this.angle);
         this.hazardHand = new HLDHand([], this.name, this.pos.copy().add(p5.Vector.fromAngle(this.angle - HALF_PI).mult(width * -.33)), this.angle);
+        this.isAlive = true;
         this.points = 0;
         this.score = 0;
         this.submitted = false;
@@ -50,66 +51,26 @@ class HLDPlayer extends Player {
         this.dinosaur = data.dinosaur;
     }
 
-    update() {
-        super.update();
-        this.hand.update();
-        this.disasterHand.update();
-        this.submittedDeck.update();
-        this.hazardHand.update();
+    animate() {
+        super.animate();
+
+        this.hand.animate();
+        this.disasterHand.animate();
+        this.submittedDeck.animate();
+        this.hazardHand.animate();
     }
 
-    checkHoveredCards() {
-        for (let card of this.hand.cards)
-            card.hovered = false;
-
-        if (gameState instanceof SelectPhase) {
-            for (let card of this.hand.cards)
-                if (!this.submitted && cardsInfo[card.frontImageIndex].type == 'score' && card.overlap(createVector(mouseX, mouseY), card.originalPosition, card.width, card.height))
-                    card.hovered = createVector(mouseX, mouseY).dist(card.originalPosition)
-        } else if (gameState instanceof EffectPhase) {
-            let effectCard = effectsToPlay[0];
-            if (effectCard.ownerName == this.name) {
-                switch (cardsInfo[effectCard.frontImageIndex].name) {
-                    case 'Pet Rock':
-                        for (let card of this.hand.cards)
-                            if (cardsInfo[card.frontImageIndex].type == 'score' && card.overlap(createVector(mouseX, mouseY), card.originalPosition, card.width, card.height))
-                                card.hovered = createVector(mouseX, mouseY).dist(card.originalPosition)
-                        break;
-                    case 'Dino Grabber':
-                        for (let player of players)
-                            if (player.name != this.name && player.overlap(createVector(mouseX, mouseY), player.pos, 50)) 
-                                player.hand.reveal();
-                        break;
-                    case 'Delicious Smoothie':
-                        for (let card of this.hand.cards)
-                            if (cardsInfo[card.frontImageIndex].type == 'score' && cardsInfo[card.frontImageIndex].effect != null && card.overlap(createVector(mouseX, mouseY), card.originalPosition, card.width, card.height))
-                                card.hovered = createVector(mouseX, mouseY).dist(card.originalPosition)
-                    case 'Fire Spray':
-                        for (let card of this.hand.cards)
-                            if (myName == this.name && card.overlap(createVector(mouseX, mouseY), card.originalPosition, card.width, card.height))
-                                card.hovered = createVector(mouseX, mouseY).dist(card.originalPosition)
-                        break;
-                }
-            }
-        } else if (gameState instanceof ScoringPhase) {
-            for (let card of this.hand.cards)
-                if (cardsInfo[card.frontImageIndex].type == 'modifier' && card.overlap(createVector(mouseX, mouseY), card.originalPosition, card.width, card.height))
-                    card.hovered = createVector(mouseX, mouseY).dist(card.originalPosition)
-        } else if (gameState instanceof DisasterPhase) {
-            for (let card of this.hand.cards)
-                if (cardsInfo[card.frontImageIndex].type == 'instant' && card.overlap(createVector(mouseX, mouseY), card.originalPosition, card.width, card.height))
-                    card.hovered = createVector(mouseX, mouseY).dist(card.originalPosition)
-        }
-
-        let hoveredCards = this.hand.cards.filter(card => card.hovered);
-        if (hoveredCards.length) {
-            this.hand.cards.forEach(card => card.focused = false);
-            hoveredCards.reduce((min, card) => min?.hovered < card.hovered ? min : card, hoveredCards[0]).focused = true;
-        }
-
+    findHoveredCard() {
         for (let card of this.hand.cards) {
-            card.checkInteraction();
-            card.update();
+            card.overlap = false;
+            if (card.isOverlapping(createVector(mouseX, mouseY), card.originalPosition, card.width, card.height))
+                card.overlap = createVector(mouseX, mouseY).dist(card.originalPosition)
+        }
+
+        let overlappingCards = this.hand.cards.filter(card => card.overlap);
+        if (overlappingCards.length) {
+            this.hand.cards.forEach(card => card.hovered = false);
+            overlappingCards.reduce((min, card) => min?.hovered < card.hovered ? min : card, overlappingCards[0]).hovered = true;
         }
     }
 
@@ -139,7 +100,7 @@ class HLDPlayer extends Player {
             this.dinosaur.traits.predators * categories.includes('Predators') + 
             this.dinosaur.traits.emotional * categories.includes('Emotional')
         )
-        if (myName == this.name && gameState instanceof EffectPhase && cardsInfo[this.submittedDeck.cards[0].frontImageIndex].name == 'Pet Rock' && this.hand.cards.some(card => card.focused)) {
+        if (myName === this.name && gameState instanceof EffectPhase && cardsInfo[this.submittedDeck.cards[0].frontImageIndex].name === 'Pet Rock' && this.hand.cards.some(card => card.focused)) {
             fill(0, 200, 0, cos(frameCount / 10) * 50 + 205);
             text(this.points + traitsModifier + cardsInfo[this.hand.cards.find(card => card.focused).frontImageIndex].points, 50 + this.name.length * 10, -5);
         } else {

@@ -8,8 +8,8 @@ class HeroCard {
         this.dinosaur = dinosaur;
     }
 
-    update() {
-        this.hovered = this.overlap(createVector(mouseX, mouseY));
+    checkHovering() {
+        this.hovered = this.isOverlapping(createVector(mouseX, mouseY));
     }
 
     show() {
@@ -71,7 +71,7 @@ class HeroCard {
         pop();
     }
 
-    overlap(pos) {
+    isOverlapping(pos) {
         return (
             pos.x > this.pos.x - this.width / 2 && 
             pos.x < this.pos.x + this.width / 2 && 

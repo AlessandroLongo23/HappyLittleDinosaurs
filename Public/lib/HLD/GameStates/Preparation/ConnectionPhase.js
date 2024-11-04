@@ -4,7 +4,7 @@ class ConnectionPhase extends GameState {
         this.name = 'connection';
     }
 
-    update() {
+    draw() {
         let backgroundHeight = windowHeight;
         let backgroundWidth = menuBackground.width / menuBackground.height * backgroundHeight;
         imageMode(CORNER);
@@ -15,12 +15,12 @@ class ConnectionPhase extends GameState {
         let logoWidth = width * .5;
         let logoHeight = logo.height / logo.width * logoWidth;
         image(logo, width * .66, height * .33, logoWidth, logoHeight);
-    
+
         fill(255);
         noStroke();
         let playButton = document.getElementById('play');
         if (playButton) {
-            playButton.disabled = document.getElementById('playerName').value.length == 0;
+            playButton.disabled = document.getElementById('playerName').value.length === 0;
             myName = document.getElementById('playerName').value;
         } else {
             push();
@@ -32,8 +32,10 @@ class ConnectionPhase extends GameState {
         }
     }
 
+    update() {}
+
     handleClick(event) {
-        if (event.target.id == 'play') {
+        if (event.target.id === 'play') {
             socket.send(JSON.stringify({ type: 'ready', readyArray: readyArr }));
             document.getElementById('playerName').disabled = true;
         }

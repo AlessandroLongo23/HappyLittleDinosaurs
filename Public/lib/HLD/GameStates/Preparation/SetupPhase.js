@@ -4,8 +4,12 @@ class SetupPhase extends GameState {
         this.name = 'setup';
     }
 
+    draw() {
+        
+    }
+
     update() {
-        if (myName == players[0].name) {
+        if (myName === players[0].name) {
             gameState = new SelectPhase();
             sendUpdateToServer();
         }
